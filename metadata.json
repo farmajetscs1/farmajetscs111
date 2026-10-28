@@ -1,0 +1,7 @@
+{
+  "name": "Modelo Tesis: Flujo de Ricci y Metapsicología",
+  "description": "Sistema formal interactivo que modela el aparato psíquico freudiano mediante geometría riemanniana, flujo de Ricci, cirugía de Perelman y dinámica topológica de pulsiones.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

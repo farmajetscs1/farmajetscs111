@@ -1,0 +1,873 @@
+TESIS · EDICIÓN UNIFICADA
+Flujo de Ricci y metapsicología freudiana
+Un modelo analógico a partir de Poincaré y Perelman
+
+Versión consolidada, ordenada y sin duplicaciones temáticas
+Octubre de 2026
+
+
+Contenido
+El índice puede actualizarse en Word o WPS para refrescar la numeración de páginas.
+Capítulo 1. Introducción y axiomas de método	3
+Capítulo 2. Freud: el Proyecto y el aparato psíquico	18
+Capítulo 3. Poincaré: Analysis Situs, la conjetura y la invención	26
+Capítulo 4. Flujo de Ricci y entropía de Perelman	31
+Capítulo 5. La analogía axiomática	36
+Capítulo 6. Cirugía, fantasía y las tres fases de «Pegan a un niño»	50
+Capítulo 7. Límites y objeciones	53
+Capítulo 8. Conclusiones	57
+Fuentes y criterios de verificación	60
+Apéndice A. Glosario alemán–español	62
+Apéndice B. Notación matemática	63
+
+Capítulo 1. Introducción y axiomas de método
+1.1 Planteo del problema
+Esta tesis se ocupa de una pregunta que atraviesa, de modo intermitente, la historia del psicoanálisis y de la matemática: ¿es posible formalizar aspectos de la metapsicología freudiana con herramientas tomadas de la geometría diferencial y de la topología, sin pretender que la psique «sea» una variedad ni que el inconsciente «sea» un flujo de Ricci?
+La pregunta no es nueva en su espíritu. El propio Freud, en el Proyecto de psicología de 1895, intentó una economía de fuerzas nerviosas con neuronas, cantidades Q y barreras de contacto. Poincaré, en «La invención matemática», describió un trabajo inconsciente que prepara la iluminación consciente. Perelman, un siglo después, construyó un flujo que deforma métricas según su curvatura y demostró, con cirugía, la conjetura de Poincaré. El cruce de estos tres nombres no existe todavía como literatura establecida. Esa ausencia es, a la vez, el riesgo y la justificación del trabajo.
+El punto de partida empírico de esta investigación fue un texto circulante en internet que asociaba el Horn Torus, el flujo de Ricci con cirugía de Perelman y ciertas figuras de la clínica (trauma, defensa, disociación, Yo integrado). Ese texto mezclaba hechos matemáticos correctos con equivalencias clínicas sin fuente. En lugar de desecharlo, se lo tomó como hipótesis informal a someter a rigor: ¿qué se puede conservar, qué debe corregirse y qué se puede convertir en un sistema de axiomas con definiciones y proposiciones?
+El resultado es un modelo analógico. No una ontología de la mente, no un modelo del cerebro y no una aplicación mecánica de la geometría a la clínica. Un diccionario controlado entre conceptos freudianos (Ding, Vorstellungsrepräsentanz, Bahnung, Nachträglichkeit, contrainvestidura, fantasía, trauma, síntoma, cura) y objetos geométricos (superficie tipo Horn Torus, grafo de marcas, ciclo límite, flujo de Ricci con borde fijo, cirugía de cuellos, grupo fundamental de S²×S¹).
+1.2 Hipótesis central
+La hipótesis de trabajo puede enunciarse así:
+El aparato psíquico, en la formalización mínima del Proyecto y de los textos de los años 1895–1919, admite una analogía estructurada con una variedad riemanniana (en dimensión 2, una superficie de la familia del Horn Torus; en dimensión 3, S²×S¹) sobre la cual se definen: (i) un conjunto discreto de marcas con carga (Vorstellungsrepräsentanzen); (ii) un grafo de facilitaciones (Bahnung); (iii) un flujo de cantidad por circuitos cuyo peso supera un umbral (pulsión); (iv) un núcleo inaccesible de la fantasía, modelado como sumidero con ciclo límite o, en 3D, como generador del grupo fundamental; (v) un flujo de Ricci restringido a la región consciente y preconsciente, con las marcas del inconsciente como condición de borde fija (contrainvestidura); (vi) una cirugía que extrae solo marcas traumáticas recuperables y no toca el núcleo de la fantasía.
+De esta hipótesis se derivan varias consecuencias que la tesis desarrolla:
+• La atemporalidad del inconsciente se traduce en la invariancia de la
+estructura (marcas, grafo, núcleo) respecto del tiempo del flujo.
+• El gasto de la defensa (Aufwand) se lee como redistribución obligada
+de curvatura cuando una marca se activa (Gauss–Bonnet).
+• La compulsión de repetición y la ausencia de órbitas periódicas en
+el flujo de Perelman no se contradicen: operan en niveles distintos (ciclos sobre la superficie versus dinámica en el espacio de métricas).
+• La cura analítica, en tanto extracción de lo reprimido recuperable,
+corresponde a la cirugía; la fantasía primaria, en tanto construcción nunca consciente, es indestructible por topología.
+• En dimensión 3, la integración total (homeomorfismo con S³) exigiría
+destruir el grupo fundamental y, con él, la fantasía: es un ideal inalcanzable dentro del modelo.
+1.3 Alcance y límites declarados
+1.3.1 Qué se afirma
+Se afirma que es posible construir un diccionario axiomático coherente entre un fragmento acotado de la metapsicología freudiana y un fragmento acotado de la geometría del flujo de Ricci y de la topología de variedades de dimensión 2 y 3. Se afirma que ese diccionario ilumina tensiones internas del propio psicoanálisis (atemporalidad versus proceso, repetición versus elaboración, trauma recuperable versus fantasía indestructible) y que permite enunciar proposiciones comprobables dentro del formalismo (por ejemplo: la cirugía no altera la clase del ciclo de la fantasía).
+1.3.2 Qué no se afirma
+No se afirma que el aparato psíquico sea una variedad riemanniana. No se afirma que los procesos neuronales obedezcan la ecuación del flujo de Ricci. No se afirma que el análisis «sea» una cirugía de Perelman. No se afirma que el modelo explique la clínica en general ni que sustituya la escucha. No se trabaja con neurociencia, ni con teorías del campo, ni con topología lacaniana de nudos. El uso de Lacan se limita al esquema L en su forma mínima (ejes simbólico e imaginario) y a la identificación de lo Real con el Ding freudiano.
+1.3.3 Lectores previstos
+El texto está escrito para psicoanalistas con interés en la formalización y en la historia de los conceptos. Las ecuaciones se introducen con la explicación necesaria para seguir el argumento; no se supone familiaridad previa con geometría riemanniana ni con EDPs. Donde el detalle técnico es imprescindible (existencia del flujo con borde, Gauss–Bonnet, ?? de S²×S¹), se cita la fuente y se separa el resultado matemático de la interpretación analógica.
+1.4 Por qué Freud, Poincaré y Perelman
+1.4.1 Freud: el Proyecto como economía formalizable
+El Proyecto de 1895 es el intento más cercano de Freud a un modelo con magnitudes, principios de extremum y una distinción entre percepción y memoria. El principio de inercia (tendencia a descargar Q hasta cero) y el principio de constancia (mantener Q bajo y estable bajo la presión de la vida) ofrecen un análogo natural de un flujo gradiente. La Bahnung (facilitación) permite pensar la memoria como estructura de pesos, no como copia. El Nebenmensch y el Ding introducen una parte constante del objeto que no se reduce a la representación. Las cartas a Fliess sobre Nachträglichkeit y sobre las fantasías como construcciones protectoras anticipan la lógica de saltos de carga y de construcciones que no son recuerdos. Todo ello está documentado en el texto alemán de Aus den Anfängen der Psychoanalyse (ed. Imago) y se verifica pasaje por pasaje en el Capítulo 2.
+1.4.2 Poincaré: topología, ciclos y trabajo inconsciente
+Poincaré aporta tres piezas distintas. Primera: el Analysis Situs y el grupo fundamental, lenguaje de lazos contraíbles y no contraíbles, indispensable para hablar de repetición que no se puede deshacer. Segunda: los ciclos límite de la teoría cualitativa de ecuaciones diferenciales, objeto matemático del circuito de la fantasía. Tercera: la descripción, en «La invención matemática», de un trabajo inconsciente que prepara la iluminación consciente, sistematizado después por Hadamard en cuatro fases. Este tercer aporte es el puente histórico más limpio entre la matemática y el inconsciente: no es una proyección del psicoanálisis sobre Poincaré, sino una afirmación del propio Poincaré.
+1.4.3 Perelman: flujo, entropía y cirugía
+Perelman demostró la conjetura de Poincaré y, más en general, la conjetura de geometrización, mediante el flujo de Ricci con cirugía. Tres resultados importan aquí. Uno: el flujo es de tipo gradiente respecto de un funcional monótono (entropía); no tiene órbitas periódicas no triviales módulo difeomorfismos y escala. Dos: las singularidades naturales son estrangulamientos de cuellos; la cirugía corta y tapa con casquetes. Tres: en ciertas 3-variedades el flujo se extingue en tiempo finito. El primero tensiona con la compulsión de repetición (y obliga a distinguir niveles de dinámica). El segundo ofrece el análogo de la extracción del trauma. El tercero, en el modelo 3D, sugiere que sin un inconsciente fijo como borde la defensa colapsaría el espacio psíquico.
+1.5 Método de trabajo
+1.5.1 Analogía controlada, no metáfora libre
+Cada concepto freudiano que entra en el modelo debe tener: (a) una fuente primaria citada; (b) un objeto geométrico definido; (c) una regla de traducción explícita. Cuando la traducción es propuesta del autor y no se deduce de Freud ni de la matemática, se marca como [P]. Cuando la fuente freudiana se verificó en el texto alemán, se marca [VT]. Cuando se citó de memoria y falta contrastar la edición definitiva, se marca [M]. Este sistema de etiquetas recorre todo el trabajo y permite al lector distinguir lo establecido de lo conjetural.
+1.5.2 Axiomas, definiciones y proposiciones
+El núcleo de la tesis (Capítulo 5) se organiza como un sistema de diez axiomas. Cada axioma va acompañado de una o más definiciones formales y, cuando corresponde, de una proposición con esbozo de demostración o de argumento de consistencia. El sistema se sometió a una revisión de consistencia interna (problemas A–F) que obligó a decisiones explícitas: la fantasía como marca primaria; el borde rígido de angustia; el par de Dirichlet a Neumann en la cúspide; el cierre de la variante A (núcleo distinto de la cúspide).
+1.5.3 Dimensión 2 primero, dimensión 3 como extensión
+Se eligió trabajar primero en dimensión 2 (familia de toros que degenera hacia el Horn Torus) porque las ecuaciones del flujo se simplifican (Ric = K·g) y Gauss–Bonnet ofrece una ley de conservación transparente para el gasto de la defensa. El modelo 3D (S²×S¹) se desarrolla como extensión: permite que el estrangulamiento de cuellos sea espontáneo (disociación) y que la indestructibilidad de la fantasía sea un hecho de ??, no solo de un índice de giro local. La tesis no pretende que uno de los dos modelos «sea el verdadero»; presenta el 2D como núcleo analógico y el 3D como enriquecimiento topológico.
+1.5.4 Flujo de coautoría y verificación
+El trabajo se construyó en etapas: reunión de contexto y fuentes; formulación de axiomas con preguntas y opciones; curaduría de decisiones; redacción; revisión de consistencia; corrección de la lectura de «Pegan a un niño» (fases 1 y 2 como construcciones, no como recuerdos recuperables). El texto alemán de las cartas a Fliess y del Entwurf se contrastó contra el resumen inicial. Las afirmaciones del texto del Horn Torus se evaluaron una por una. Lo que no tiene fuente se declara hipótesis.
+1.6 Axiomas de método
+Antes de los axiomas del modelo (Capítulo 5) se enuncian los axiomas que rigen el propio trabajo. No son teoremas; son reglas de juego.
+Axioma de método M1 — Analogía, no identidad
+El modelo es una analogía estructurada. Ninguna afirmación de la forma «la psique es una variedad» o «el análisis es una cirugía de Perelman» pertenece al cuerpo de la tesis.
+Axioma de método M2 — Primacía de las fuentes primarias
+Los conceptos freudianos se toman de textos de Freud (y, en mínimo, del esquema L de Lacan). No se construye el modelo sobre resumidores secundarios sin contrastar el original. Cuando el original no está disponible en la sesión de trabajo, la cita se marca [M] y queda pendiente de verificación.
+Axioma de método M3 — Separación de niveles de dinámica
+La dinámica de la pulsión sobre la superficie (o sobre la 3-variedad) y la dinámica del flujo de Ricci en el espacio de métricas son niveles distintos. Una tensión aparente entre repetición y ausencia de órbitas periódicas se resuelve declarando esa distinción, no forzando una identificación.
+Axioma de método M4 — El Icc no fluye
+El tiempo del flujo de Ricci pertenece a la región Pcc/Cc (contrainvestidura). La estructura del Icc (marcas, grafo, núcleo) es invariante respecto de ese tiempo, salvo por eventos de Nachträglichkeit y por actos de cirugía. Así se respeta la atemporalidad freudiana sin bloquear el uso del flujo.
+Axioma de método M5 — La fantasía primaria no es operable
+La marca primaria n y su circuito (C? en 2D; clase en ?? en 3D) no son objetos de cirugía. La cirugía solo extrae marcas traumáticas que fueron reprimidas y son, en principio, recuperables. Esta regla traduce la distinción freudiana entre lo reprimido elaborable y lo que se construye en el análisis sin haber sido nunca consciente.
+Axioma de método M6 — Contingencia del análisis
+Que el análisis identifique el circuito dominante o reconstruya el interior a partir de la voz es contingente: depende de que los datos de borde permitan una reconstrucción suficientemente unívoca. El modelo formaliza esa contingencia como posible no-unicidad del problema inverso.
+Axioma de método M7 — Etiquetado de incertidumbre
+Toda afirmación se etiqueta según su estatuto: [VT] verificado en texto alemán; [VW] verificado en fuente matemática o secundaria localizable; [M] citado de memoria, pendiente de verificación; [P] propuesta del trabajo, no deducida de fuente; [A] decisión explícita del autor del modelo. El lector debe poder rastrear el grado de certeza de cada paso.
+1.7 Estructura de la tesis
+La tesis se organiza en ocho capítulos. El Capítulo 1 (este) fija el problema, la hipótesis, el alcance, el método y los axiomas de método. El Capítulo 2 reconstruye el aparato freudiano a partir del Proyecto, las cartas a Fliess, la Afasia y los textos de 1915–1919 necesarios para la atemporalidad, la contrainvestidura y la fantasía. El Capítulo 3 presenta a Poincaré como puente: grupo fundamental, conjetura, ciclos límite e invención matemática. El Capítulo 4 expone el flujo de Ricci, la entropía de Perelman, la cirugía, la extinción en tiempo finito y el flujo con borde. El Capítulo 5 es el núcleo: los diez axiomas del modelo, las definiciones formales, las proposiciones y el diccionario Freud–geometría, incluida la sección sobre contrainvestidura con borde fijo y el gasto de la defensa. El Capítulo 6 aplica el modelo a las tres fases de «Pegan a un niño», con la corrección de que las fases 1 y 2 son construcciones. El Capítulo 7 recoge límites, objeciones y problemas abiertos. El Capítulo 8 concluye.
+La extensión prevista es del orden de trescientas páginas. El presente Capítulo 1 ocupa la función de contrato de lectura: declara qué se promete, qué se excluye y con qué reglas se avanza.
+1.8 Sobre el texto de partida y el Horn Torus
+El Horn Torus es la superficie de revolución con radio mayor igual al radio menor: el agujero se cierra en una cúspide. Es un objeto geométrico estándar. No es, sin embargo, una variedad suave en la cúspide, y por tanto no admite el flujo de Ricci de modo directo. En el modelo se trabaja con la familia de toros suaves de radio menor r < 1, o con el complemento de la cúspide, y se usa la cúspide como puerto (lugar de la voz y del oído).
+La conjetura de Poincaré no se aplica al toro (superficie de dimensión 2). Se aplica a 3-variedades cerradas. Por eso el modelo 3D introduce S²×S¹, cuyo 2-esqueleto es homotópicamente cercano al Horn Torus y cuyo grupo fundamental es cíclico infinito: el lazo esencial de la fantasía.
+La palabra «horn» aparece en los artículos de Perelman en un sentido distinto (regiones del espacio-tiempo del flujo). La confusión del texto de partida se corrige desde el inicio: el Horn Torus geométrico y los «maximal horns» de Perelman no son el mismo objeto.
+1.9 Contribución pretendida
+La contribución de la tesis, si se sostiene, es triple.
+Primera: ofrecer un sistema axiomático explícito que traduzca un fragmento de la metapsicología freudiana a un lenguaje de variedades, flujos y cirugía, con reglas de consistencia y con límites declarados.
+Segunda: mostrar que la tensión entre la compulsión de repetición y la monotonicidad del flujo de Perelman no es un obstáculo, sino un indicador de que hay que separar la dinámica de la pulsión de la dinámica de la defensa.
+Tercera: reformular la distinción entre trauma recuperable y fantasía indestructible como distinción entre objetos operables por cirugía y objetos protegidos por topología (índice de giro o clase en ??), y vincular esa reformulación con el estatuto freudiano de las fases de «Pegan a un niño» como construcciones.
+No se pretende cerrar el debate sobre la formalización en psicoanálisis. Se pretende mostrar un camino practicable, con fuentes controladas y con un formalismo que se puede criticar punto por punto.
+1.10 Nota sobre originalidad y literatura
+No se ha encontrado literatura académica que combine de modo sistemático el flujo de Ricci de Perelman con la metapsicología freudiana. Existen trabajos sobre topología y psicoanálisis (en particular lecturas lacanianas de nudos y toros), trabajos sobre el Proyecto de Freud desde la neurociencia o la filosofía de la ciencia (Pribram y Gill, Kitcher), y la reflexión del propio Poincaré sobre el inconsciente en la invención. El cruce específico que aquí se propone —Ricci, cirugía, entropía, borde fijo, Gauss–Bonnet como gasto de la defensa, S²×S¹ como espacio del aparato— es, en el estado actual de la búsqueda, original. Esa originalidad impone una carga de rigor: cada paso debe poder defenderse sin apelar a una tradición ya establecida del «Ricci freudiano».
+1.11 Cómo leer esta tesis
+El lector psicoanalista puede entrar por el Capítulo 2 (Freud) y el Capítulo 6 (fantasía), y usar el Capítulo 5 como diccionario. El lector con formación matemática puede entrar por los Capítulos 3 y 4 y tratar el Capítulo 5 como un sistema formal a evaluar. El Capítulo 7 está escrito para ambos: lista las objeciones previsibles y el estado de cada una.
+Las ecuaciones no son decorativas. Cuando aparece ?g/?t = ?2 Ric(g), se usa después para restringir el dominio del flujo a ? y para argumentar la conservación de curvatura. Cuando aparece el índice de giro o ?? ? ?, se usa para probar que la cirugía admisible no destruye la fantasía. El formalismo está al servicio de distinciones clínicas (recuperable / no recuperable; elaborable / indestructible; gasto global de la defensa / acto local de extracción).
+1.12 Cierre del capítulo
+Quedan fijados el problema, la hipótesis, el alcance, los límites, el método y los siete axiomas de método. El resto de la tesis ejecuta ese contrato: reconstruir las fuentes, definir el modelo, aplicarlo a la fantasía, extenderlo a dimensión 3 y enumerar lo que aún no se sostiene.
+La pregunta inicial —si es posible una matematización analógica del inconsciente freudiano con las herramientas de Poincaré y Perelman— no se responde con un sí o un no global. Se responde con un sistema de axiomas, un diccionario, un conjunto de proposiciones y una lista explícita de problemas abiertos. Ese es el criterio de completitud que esta introducción adopta.
+1.13 Resumen de los axiomas de método
+AxiomaEnunciado breveM1Analogía estructurada, no identidad ontológicaM2Primacía de fuentes primarias; etiquetado de lo no verificadoM3Separación de niveles: pulsión sobre S vs. flujo en el espacio de métricasM4El Icc no fluye; el tiempo t pertenece a la contrainvestiduraM5La fantasía primaria no es operable por cirugíaM6Contingencia del análisis como posible no-unicidad del problema inversoM7Etiquetado [VT]/[VW]/[M]/[P]/[A] de cada afirmación
+— Fin del Capítulo 1 —
+1.14 Contexto histórico de los intentos de formalización
+La idea de formalizar el psicoanálisis no nace con este trabajo. Ya en vida de Freud hubo lecturas que subrayaban el carácter «económico» del Proyecto y su cercanía a modelos de la física de la época. Décadas después, Pribram y Gill (1976) reevaluaron el Proyecto como anticipación de ideas de procesamiento de información. Kitcher (1992) lo situó en la filosofía de la ciencia del siglo XIX. En el ámbito francófono y rioplatense, la topología lacaniana (Vappereau, Soury y otros) exploró toros, bandas de Möbius y nudos borromeos como soporte de la estructura del sujeto. Matte Blanco propuso una lógica del inconsciente basada en relaciones simétricas y conjuntos infinitos. Ninguno de estos caminos atraviesa el flujo de Ricci ni la cirugía de Perelman.
+La diferencia de este trabajo no es de prestigio ni de novedad por la novedad. Es de herramienta. El flujo de Ricci ofrece tres cosas que otras formalizaciones no concentran a la vez: (1) una evolución determinada por la curvatura (análogo de la distribución de tensión); (2) un funcional monótono (análogo de un principio de economía); (3) una cirugía que cambia la topología de modo controlado (análogo de un acto que extrae sin pretender borrar todo). La topología lacaniana de nudos es rica en estructura y pobre en dinámica. Los modelos económicos del Proyecto son ricos en dinámica local y pobres en topología global. El cruce con Perelman intenta cubrir ambos registros.
+Eso no implica superioridad. Implica un experimento controlado: tomar una herramienta matemática contemporánea, con teoremas cerrados, y ver hasta dónde llega la analogía antes de romperse. El Capítulo 7 está dedicado precisamente a los puntos de rotura.
+1.15 El Proyecto de 1895 como punto de anclaje
+Conviene detenerse en por qué el Proyecto, y no solo la metapsicología de 1915 o el más allá del principio de placer, es el ancla.
+Primero, porque el Proyecto nombra magnitudes. Hay una cantidad Q, hay neuronas ?, ? y ?, hay barreras de contacto con grados de permeabilidad, hay una distinción entre cantidad que pasa y cantidad que queda. Aunque el vocabulario sea el de la fisiología de fin de siglo, la forma del argumento es ya la de un sistema con variables de estado y reglas de evolución.
+Segundo, porque el principio de inercia y el principio de constancia están formulados como tendencias extremales. El sistema «quiere» descargar; la vida lo obliga a acumular; la solución de compromiso es mantener bajo y estable. Eso es estructuralmente cercano a un flujo gradiente que desciende un funcional bajo una restricción.
+Tercero, porque la memoria no es imagen sino facilitación. La Bahnung es un peso entre elementos. El grafo ? del modelo no es una metáfora libre: es la traducción más directa posible de ese concepto a un objeto matemático estándar.
+Cuarto, porque el Ding aparece como resto no representable del complejo del prójimo. En un modelo que identifica la superficie con lo Real, ese resto tiene un lugar geométrico: la superficie misma, o la cúspide, o el núcleo, según el axioma. El trabajo posterior decide cuál, pero el Proyecto autoriza la pregunta.
+La tesis no «revive» el Proyecto como neurociencia. Lo usa como cantera de formas. Donde el Proyecto es oscuro o abandonado por Freud, se lo declara y se pasa a los textos de 1915–1919. Donde es claro, se lo cita con página de la edición Imago.
+1.16 Poincaré y el inconsciente del matemático
+La sección sobre Poincaré en el Capítulo 3 no es un adorno cultural. Es un argumento de legitimidad. Si el propio autor de la conjetura y del Analysis Situs afirma que la invención matemática depende de un trabajo inconsciente de combinación y selección, entonces el puente entre topología e inconsciente no es una extravío del psicoanálisis: es una tesis del matemático.
+Poincaré describe la iluminación súbita tras un período de incubación en el que no se piensa conscientemente en el problema. Hadamard codifica cuatro fases. La tesis no necesita que esa psicología de la invención sea «verdadera» en sentido empírico contemporáneo. Necesita que sea un testimonio interno de la tradición matemática que aquí se usa. Cuando se invoca el grupo fundamental para hablar de repetición, no se está violentando a Poincaré: se está usando su herramienta en un dominio que él mismo vinculó, en otro registro, con el inconsciente.
+Los ciclos límite refuerzan el punto. Poincaré los introduce en dinámica cualitativa. El modelo los recupera como atractores de la pulsión alrededor del núcleo de la fantasía. De nuevo: no es una metáfora pintoresca; es el mismo tipo de objeto (una órbita periódica estable en un campo) aplicado a otra interpretación de las variables.
+1.17 Qué se le pide al lector psicoanalista
+Se le pide que tolere ecuaciones durante el tiempo necesario para ver qué distinción clínica sostienen. No se le pide que se convierta en geómetra. Se le pide, en cambio, que juzgue si la distinción entre marca operable y marca no operable, o entre gasto global de la defensa y acto local de extracción, ilumina algo de su práctica o de su lectura de Freud.
+Se le pide también que acepte el sistema de etiquetas [VT], [M], [P]. No es pedantería: es la única manera de no hacer pasar por «Freud dijo» lo que es reconstrucción, ni por «teorema» lo que es analogía.
+Finalmente, se le pide que reserve el juicio sobre el modelo 3D hasta haber recorrido el 2D. El 3D resuelve problemas (cirugía espontánea, indestructibilidad global) y abre otros (puerto de la voz, existencia a tiempos largos con borde). No es el techo del edificio; es un piso adicional.
+1.18 Qué se le pide al lector con formación matemática
+Se le pide que acepte que el criterio de éxito no es la demostración de un teorema nuevo sobre el flujo de Ricci, sino la coherencia del diccionario y la no contradicción con los resultados citados (Perelman, Gianniotis, Colding–Minicozzi, Gauss–Bonnet).
+Se le pide que distinga entre: (a) hechos matemáticos usados como cajas negras (existencia del flujo con borde; monotonicidad de la entropía); (b) construcciones del modelo (el grafo ?, el ciclo C?, la pared kg = 1/?); (c) interpretaciones analógicas (kg como angustia, cirugía como extracción). Solo (a) se evalúa con el estándar de la matemática; (b) y (c) se evalúan con el estándar de la consistencia interna y de la fidelidad a las fuentes freudianas.
+Se le pide, por último, que no exija un teorema del tipo «el aparato psíquico converge a una métrica de Einstein». Ese teorema no existe en esta tesis porque el objeto no es el cerebro ni un sistema físico cerrado. El objeto es un modelo analógico con proposiciones internas.
+1.19 Mapa detallado de los capítulos siguientes
+Capítulo 2. Reconstrucción del aparato a partir del Entwurf, las cartas a Fliess, la Afasia y los textos de 1915 necesarios. Cada pasaje clave lleva ubicación en Imago o, cuando falta, marca [M]. Se corrige la atribución errónea de la fórmula Sach+Wort al Entwurf. Se prepara el terreno para Bahnung ? pesos, Ding ? superficie, Seitenbesetzung ? contrainvestidura, Nachträglichkeit ? saltos de carga.
+Capítulo 3. Poincaré en tres registros: Analysis Situs y ??; ciclos límite; invención matemática e inconsciente. Hadamard como mediador. Cierre: por qué estos tres registros convergen en el modelo.
+Capítulo 4. Ecuación del flujo; reducción a dimensión 2; entropía de Perelman; cirugía; extinción; flujo con borde (Gianniotis); geometría del Horn Torus y de la familia Tr. Cada resultado se enuncia con su referencia y se separa de la interpretación.
+Capítulo 5. Los diez axiomas, las doce definiciones, las tres proposiciones, el diccionario, la revisión de consistencia y la sección formal sobre contrainvestidura con borde fijo y el gasto de la defensa (Gauss–Bonnet como Aufwand).
+Capítulo 6. «Pegan a un niño»: las tres fases según Freud; corrección de que 1 y 2 son construcciones; correspondencias en el modelo; esquema L mínimo; construcción como problema inverso; cirugía y fantasía.
+Capítulo 7. Lista de tensiones (singularidad del Horn Torus, dimensión, atemporalidad, repetición versus monotonicidad, compatibilidad del borde, reglas de reorganización tras cirugía, citas pendientes, identificabilidad, problemas del 3D). Estado de cada una: resuelta, parcial, abierta, postulada.
+Capítulo 8. Conclusiones: qué se sostuvo, qué quedó abierto, qué se excluyó de propósito, y una nota sobre la originalidad y sus riesgos.
+1.20 Sobre la extensión y el ritmo de lectura
+La extensión total prevista (~300 páginas) no está al servicio del volumen por el volumen. Está al servicio de tres exigencias: (1) citar con suficiente contexto los pasajes freudianos para que el lector no dependa de la autoridad del autor de la tesis; (2) introducir las nociones matemáticas con el mínimo de formalismo que permita seguir las proposiciones; (3) dejar rastros de las decisiones (por qué variante A y no B; por qué 2D primero; por qué la fase 1 no es una marca de VT).
+El Capítulo 1 es deliberadamente denso en declaraciones de método y relativamente pobre en ecuaciones. Las ecuaciones llegan cuando hacen falta para sostener una distinción, no antes.
+1.21 Riesgos declarados
+El riesgo principal es el de la analogía desbocada: encontrar en la geometría lo que ya se había puesto en la interpretación. El sistema de etiquetas y la revisión de consistencia mitigan ese riesgo; no lo eliminan. El segundo riesgo es el de la ilegibilidad: que el psicoanalista no siga las ecuaciones o que el matemático no siga a Freud. La estructura en capítulos de fuente (2, 3, 4) y capítulos de modelo (5, 6, 11 del documento maestro) intenta ofrecer entradas múltiples. El tercer riesgo es el de la originalidad aislada: al no haber tradición de «Ricci freudiano», cada paso debe justificarse sin red de citas afines. Eso se asume.
+1.22 Criterio de éxito de la tesis
+La tesis tendrá éxito, según el contrato de este capítulo, si:
+1. El diccionario axioma por axioma es internoemente consistente. 2. Cada concepto freudiano mayor del modelo tiene fuente primaria o está marcado como [P]. 3. Las proposiciones sobre indestructibilidad y sobre el alcance de la cirugía se argumentan dentro del formalismo. 4. Las tensiones listadas en el Capítulo 7 no se ocultan. 5. Un lector psicoanalista puede reconstruir la distinción trauma recuperable / fantasía indestructible sin aceptar la ontología de la variedad. 6. Un lector matemático puede localizar qué resultados de Perelman, Gianniotis o Gauss–Bonnet se usan y cuáles no se invocan.
+No forma parte del criterio de éxito que el modelo «cure» mejor, ni que prediga datos clínicos, ni que se implemente numéricamente. Esos serían proyectos distintos.
+1.23 Transición al Capítulo 2
+El Capítulo 2 comienza por el Proyecto y las cartas a Fliess porque allí están las formas que el modelo traduce. Sin Bahnung no hay pesos del grafo. Sin Ding no hay superficie como Real. Sin Seitenbesetzung no hay contrainvestidura. Sin Nachträglichkeit no hay saltos de carga. Sin el estatuto de las fantasías como construcciones (carta del 2.5.1897 y, más tarde, «Pegan a un niño») no hay base para separar la marca primaria de las marcas recuperables.
+Se invita al lector a entrar en el texto alemán con la misma cautela con la que se le pide que entre en las ecuaciones: no para adorarlo, sino para verificar.
+1.24 Precisiones sobre la noción de analogía
+En filosofía de la ciencia se distingue a veces entre analogía material (mismo tipo de objetos) y analogía formal (misma estructura de relaciones). Esta tesis trabaja en el segundo sentido. No se dice que una marca psíquica sea un punto de curvatura concentrada del mismo modo en que se dice que dos electrones son del mismo tipo. Se dice que la red de relaciones entre marcas, cargas, circuitos, borde y flujo reproduce, en un dominio geométrico, un patrón de relaciones que el texto freudiano describe en su dominio.
+Esa distinción importa para no caer en dos errores simétricos. El primero es el reduccionismo: creer que, una vez escrito el flujo de Ricci, el psicoanálisis queda «explicado». El segundo es el esteticismo: creer que basta una metáfora elegante para legitimar el cruce. La analogía formal exige isomorfismo parcial de estructura y, a la vez, conciencia de los puntos donde el isomorfismo falla. El Capítulo 7 es el inventario de esas fallas.
+1.25 Relación con otras formalizaciones (Matte Blanco, topología lacaniana)
+Matte Blanco propuso que el inconsciente trata las relaciones asimétricas como simétricas y opera con clases infinitas. Su formalismo es lógico-conjuntista, no diferencial-geométrico. No compite directamente con este modelo; opera en otro registro. Donde Matte Blanco enfatiza la simetría y el infinito, aquí se enfatiza la curvatura, el borde y la cirugía. Un diálogo futuro sería posible; no se emprende en esta tesis.
+La topología lacaniana de nudos y toros ha producido una literatura extensa. Esta tesis se aparta de ella de modo deliberado: no usa nudos borromeos, no identifica el sujeto con un agujero de nudo, no trabaja la cadena significante como enlace. Conserva del legado lacaniano solo el esquema L mínimo y la afinidad entre lo Real y el Ding. La razón es de economía: introducir nudos exigiría otro aparato matemático y otra polémica, y diluiría el foco en Ricci y Perelman.
+1.26 Sobre la dimensión ética del modelo
+Aunque el modelo es formal, tiene una implicación ética mínima que conviene declarar. Si la fantasía primaria es indestructible por topología, entonces un análisis que prometiera «borrar el núcleo» estaría prometiendo algo que el modelo declara imposible. La cura, en este marco, es extracción de lo recuperable y reorganización de la defensa, no aniquilación de la estructura que sostiene la repetición. Esa tesis es freudiana antes que geométrica: Freud ya distinguía lo reprimido elaborable de lo que solo se construye. La geometría solo le da una forma.
+1.27 Nota sobre el público y el tono
+El tono de la tesis es deliberadamente mixto: a ratos técnico, a ratos hermenéutico. No se busca el estilo de un paper de Annals of Mathematics ni el de un ensayo de clínica pura. Se busca el de un trabajo interdisciplinario que no traicione a ninguno de los dos polos. Cuando una demostración es solo un esbozo, se dice. Cuando una cita es de memoria, se marca. Cuando una decisión es del autor del modelo, se etiqueta [A] o [P].
+1.28 Organización material del manuscrito
+Además de los ocho capítulos, el manuscrito incluye apéndices de glosario alemán–español, notación matemática y cronología del trabajo. El documento maestro de compilación reúne el estado de todas las piezas. Los capítulos individuales (2, 3, 4, 6, sección de contrainvestidura, modelo 3D) existen como archivos separados para facilitar la revisión parcial. La versión de entrega unificará la numeración de páginas, la bibliografía y el índice general.
+1.29 Cierre ampliado
+Este Capítulo 1 ha fijado, con el detalle que permite una introducción, el problema, la hipótesis, el alcance, los límites, el método, los axiomas de método, el mapa de la tesis, la relación con otras formalizaciones, los riesgos y el criterio de éxito. Lo que sigue es la ejecución. El lector que haya aceptado el contrato puede pasar al Capítulo 2. El que no lo acepte encontrará en el Capítulo 7 las objeciones que probablemente ya formuló, y el estado de cada una.
+La matematización del inconsciente que aquí se propone no es un destino necesario del psicoanálisis ni una aplicación obligatoria de la geometría. Es un experimento de traducción. Como todo experimento, se juzga por lo que logra hacer visible y por lo que declara no lograr.
+1.30 Desarrollo de cada axioma de método
+M1 en detalle
+La analogía estructurada implica que para cada flecha del diccionario (concepto freudiano ? objeto geométrico) debe ser posible enunciar la regla de traducción y el dominio en el que vale. Fuera de ese dominio, la flecha se suspende. Por ejemplo, la identificación de la contrainvestidura con el flujo de Ricci vale en ? y bajo las condiciones de borde declaradas; no vale como afirmación sobre el cerebro ni como modelo de la transferencia en general.
+M2 en detalle
+La primacía de las fuentes primarias obliga a una disciplina de archivo. El texto alemán de Imago se usó para verificar el Entwurf y las cartas. Cuando una fórmula circula en la tradición (Sach + Wort) y resulta ser de 1915 y no de 1895, se corrige. Cuando un pasaje se recuerda pero no se tiene a la vista, se marca [M]. Esta disciplina no garantiza la verdad; garantiza la trazabilidad.
+M3 en detalle
+La separación de niveles evita un error frecuente en las analogías dinámicas: identificar la repetición clínica con una órbita periódica del flujo que modela la defensa. Perelman demuestra que su flujo, módulo difeomorfismos y escala, no tiene órbitas periódicas no triviales. Si la repetición fuera esa órbita, el modelo colapsaría. Al declarar dos niveles —ciclos de la pulsión sobre S; trayectoria del flujo en el espacio de métricas— se conserva tanto el resultado de Perelman como la clínica de la repetición.
+M4 en detalle
+«El Icc no fluye» es la traducción operativa de la atemporalidad. Las cargas a? no tienen derivada temporal entre eventos. Solo saltan (Nachträglichkeit) o se anulan (cirugía). El parámetro t del flujo de Ricci mide el tiempo de la defensa, no el tiempo del inconsciente. Así se evita la objeción obvia: «¿cómo puede ser atemporal un objeto que evoluciona con una EDP?»
+M5 en detalle
+La no operabilidad de la fantasía primaria es a la vez un postulado clínico y un hecho del formalismo (en 2D, el postulado 2?? ? ?min; en 3D, la prohibición de cortar la esfera esencial). No se deduce de un teorema único; se impone para respetar el estatuto freudiano de la fase 2 de «Pegan a un niño» y se verifica que es compatible con la topología del modelo.
+M6 en detalle
+La contingencia del análisis se formaliza como posible no-unicidad o inestabilidad del problema inverso (recuperar el interior a partir de y(t)). No se afirma que el problema sea siempre mal puesto; se afirma que el modelo no garantiza unicidad, y que esa no garantía corresponde a la experiencia clínica de que no todo análisis llega a la construcción certera.
+M7 en detalle
+El etiquetado no es un aparato burocrático. Es la condición para que el desacuerdo sea localizable. Si un lector objeta un paso, debe poder decir: «objeto el [P] de la definición 5» o «la cita [M] de 1923 no dice eso». Sin etiquetas, el desacuerdo se vuelve global e inútil.
+1.31 Sobre el uso de la lengua y las ediciones
+Las citas freudianas se toman del alemán cuando se verificaron en Imago, y se traducen al castellano en el cuerpo del texto. Las ediciones de referencia para la fase final de redacción serán Amorrortu y, para el control, la Gesamtausgabe o la Standard Edition según el pasaje. Las citas matemáticas se dan por arXiv o por revista con año. Los nombres propios de teoremas (Gauss–Bonnet, Calderón, etc.) se usan en la forma convencional.
+1.32 Límites de la introducción misma
+Una introducción no demuestra. Declara. Las demostraciones —o los esbozos de argumentación— están en los Capítulos 5 y 6 y en el modelo 3D. Quien busque ya en estas páginas la prueba de que C? es indestructible no la encontrará: encontrará el anuncio de que esa prueba se da en la Proposición 1 del Capítulo 5. Quien busque la exégesis completa de la carta 52 la encontrará en el Capítulo 2. Esta división del trabajo es intencional.
+1.33 Agradecimientos de método (no institucionales)
+El trabajo se benefició de un flujo de coautoría en el que cada decisión de modelado (variante A o B del núcleo; sumidero o barrera; fase 1 como construcción) se formuló como pregunta con opciones y se cerró con una respuesta explícita del autor del modelo. Ese procedimiento queda registrado en la cronología. No sustituye la responsabilidad del texto; la hace rastreable.
+1.34 Última precisión antes del Capítulo 2
+El inconsciente, en Freud, no es un continente oscuro que la matemática vendría a iluminar. Es un sistema de leyes (atemporalidad, ausencia de contradicción, primacía del proceso primario, etc.) que el Proyecto y los textos de 1915 enuncian. La tesis no inventa un inconsciente geométrico. Toma esas leyes, en la medida en que el fragmento elegido las contiene, y pregunta qué objetos de la geometría del flujo y de la topología de variedades las pueden hospedar sin traicionarlas. La respuesta es el sistema de axiomas del Capítulo 5. La introducción solo prepara el terreno para que esa respuesta se pueda leer con las reglas correctas.
+1.35 Recorrido argumentativo previsto (detalle)
+El argumento de la tesis, visto en conjunto, avanza en tres movimientos.
+Movimiento 1 (Capítulos 2–4). Reunir las piezas. Del lado freudiano: magnitudes, facilitación, resto no representable, investidura lateral, posterioridad, construcciones. Del lado matemático: lazos, ciclos, flujo, entropía, cirugía, borde, extinción. Al final de este movimiento el lector dispone de dos cajas de herramientas y de la convicción de que no se las ha forzado aún a coincidir.
+Movimiento 2 (Capítulos 5–6). Construir el diccionario y aplicarlo. Los diez axiomas fijan las flechas. Las definiciones dan objetos. Las proposiciones demuestran, dentro del formalismo, que la fantasía es indestructible bajo cirugía admisible y que la activación de una marca obliga a reorganizar toda la defensa. El Capítulo 6 muestra que la lectura de «Pegan a un niño» (fases 1 y 2 como construcciones) es compatible con el diccionario y que la corrección de una identificación errónea (fase 1 = trauma recuperable) mejora la coherencia.
+Movimiento 3 (modelo 3D y Capítulo 7). Extender y limitar. En dimensión 3 la indestructibilidad se vuelve un hecho de ?? y la disociación puede ser espontánea. Al mismo tiempo, aparecen problemas nuevos (puerto de la voz, existencia a largo plazo con borde). El Capítulo 7 no los oculta. Una tesis que solo exhibiera el diccionario sin sus bordes de validez sería retórica. Una tesis que solo listara objeciones sin diccionario sería paralítica. El movimiento 3 intenta el equilibrio.
+1.36 Sobre la noción de «gasto» que anticipa el Capítulo 5
+Ya en esta introducción conviene adelantar, sin demostración, la idea del gasto. En Freud, la contrainvestidura cuesta. El Yo no reprime gratis: invierte energía para mantener lo reprimido a distancia. En el modelo, esa idea se traduce así: cuando una marca se activa, el borde de ? cambia y, por Gauss–Bonnet, la curvatura total del interior debe compensar. La defensa no puede «pagar en un solo punto»; debe redistribuir en toda la región consciente y preconsciente. Ese carácter global del gasto es una predicción del formalismo, no una metáfora añadida. Se argumenta en la sección formal del Capítulo 5 (y en el documento Capitulo_5_Seccion_Contrainvestidura).
+1.37 Por qué no se modela la transferencia
+La transferencia es central en la clínica y en la teoría freudiana del tratamiento. No aparece como objeto primario del modelo. La razón es de alcance: modelar la transferencia exigiría al menos dos aparatos en interacción, o un borde cuyo dato dependiera de la presencia del otro de modo más rico que el puerto de la voz. Eso es posible en principio (el dato u en c podría interpretarse como incluyendo la voz del analista), pero desborda el contrato de esta tesis. Se declara la exclusión para que no se lea como olvido.
+1.38 Por qué no se modela el ello, el yo y el superyó como regiones separadas
+La segunda tópica (ello, yo, superyó) no se traduce en una partición de la variedad en tres subdominios. El modelo trabaja con la distinción Icc / Pcc-Cc (estructura fija versus flujo) y con la voz del superyó como dato de borde en c. Es una simplificación. Una extensión futura podría particionar ? o enriquecer el borde; no se emprende aquí.
+1.39 Relación con el principio de placer y el más allá
+El principio de placer (tendencia a reducir la tensión) y el más allá (compulsión de repetición, pulsión de muerte) están presentes de modo oblicuo. El primero se alinea con el carácter gradiente del flujo y con el principio de constancia del Proyecto. El segundo se alinea con la indestructibilidad del circuito de la fantasía. La tesis no resuelve el estatuto metapsicológico de la pulsión de muerte; usa la repetición como hecho clínico-formal (hay un ciclo que no se contrae) sin decidir la ontología de la pulsión.
+1.40 Nota final sobre el título
+«Flujo de Ricci y metapsicología freudiana: un modelo analógico a partir de Poincaré y Perelman» anuncia tres cosas: la herramienta (Ricci), el dominio (metapsicología freudiana), el estatuto (analógico) y los puentes (Poincaré y Perelman). No anuncia una unificación de la matemática y el psicoanálisis, ni una nueva clínica, ni un algoritmo. Anuncia un modelo. Este Capítulo 1 ha intentado hacer legible ese anuncio y fijar las reglas con las que se lo juzgará.
+Fin de la expansión del Capítulo 1.
+Capítulo 2. Freud: el Proyecto y el aparato psíquico
+Formalización mínima a partir del Entwurf, las cartas a Fliess y la Afasia.
+2.1 Introducción al capítulo
+Este capítulo reconstruye el fragmento de la metapsicología freudiana que alimenta el modelo analógico de la tesis. No es una historia completa del pensamiento de Freud entre 1891 y 1919, ni una exégesis exhaustiva del Proyecto de psicología. Es una lectura orientada: se buscan las formas —magnitudes, principios de extremum, facilitaciones, restos no representables, investiduras laterales, posterioridad, construcciones— que el Capítulo 5 traducirá a objetos geométricos.
+La fuente principal es Aus den Anfängen der Psychoanalyse (edición Imago), que reúne las cartas a Wilhelm Fliess y el manuscrito del Entwurf einer Psychologie de 1895. Los pasajes citados como [VT] fueron contrastados contra ese texto. Las referencias a Lo inconsciente (1915), La represión (1915), Pegan a un niño (1919) y El yo y el ello (1923) se marcan [M] cuando aún falta la verificación página por página en la edición definitiva (Amorrortu o Gesamtausgabe).
+El hilo del capítulo es el siguiente. Primero, el Proyecto como economía de fuerzas: principio de inercia y principio de constancia. Segundo, la memoria como Bahnung (facilitación) y el papel de las barreras de contacto. Tercero, el Nebenmensch y el Ding como origen de una parte constante del objeto. Cuarto, el esquema de transcripciones de la carta 52 y la ligazón del preconsciente con las representaciones de palabra. Quinto, la Nachträglichkeit y las fantasías como construcciones. Sexto, la corrección sobre Sachvorstellung y Wortvorstellung. Séptimo, la Afasia y la imagen sonora. Octavo, la Seitenbesetzung como antecedente de la contrainvestidura. Noveno, el estatuto de lo reprimido y de lo construido. Décimo, el puente explícito hacia el modelo geométrico.
+Se advierte desde el inicio que este capítulo no sustituye la lectura de Freud. Ofrece una selección y una ordenación al servicio del diccionario del Capítulo 5. El lector que desee controvertir una traducción deberá poder localizar el pasaje freudiano y la flecha geométrica correspondiente.
+2.2 El Proyecto de 1895: una economía de fuerzas nerviosas
+2.2.1 Contexto y estatuto del manuscrito
+El Entwurf einer Psychologie fue escrito por Freud en el otoño de 1895 y enviado a Fliess. No se publicó en vida de Freud. Circuló después entre los papeles de Fliess y se editó en Aus den Anfängen der Psychoanalyse. Su estatuto es el de un intento intenso y luego abandonado como sistema cerrado: Freud no lo retoma página por página, pero varias de sus ideas reaparecen transformadas en la metapsicología de 1915 y en la teoría de la angustia.
+Para esta tesis el Proyecto importa no como doctrina definitiva, sino como el lugar donde Freud más se acercó a un modelo con variables de estado, reglas de evolución y una distinción operativa entre percepción y memoria. Pribram y Gill (1976) reevaluaron el Proyecto como anticipación de ideas de procesamiento de información. Kitcher (1992) lo situó en la filosofía de la ciencia del siglo XIX. Aquí se lo usa como cantera de formas [VW por referencia secundaria].
+La decisión metodológica del Capítulo 1 (Axioma M2) obliga a preferir el texto del Entwurf a los resumidores cuando hay divergencia. Por eso cada afirmación central de este capítulo lleva, cuando es posible, la marca [VT] y la ubicación en Imago.
+2.2.2 El principio de inercia neuronal
+Freud formula, en la primera parte del Entwurf, lo que llama principio de inercia de las neuronas: estas tienden a librarse por completo de la cantidad Q que las ocupa. La forma primaria de esa descarga es la reflexión motriz. El sistema, en su estado ideal, buscaría el nivel Q = 0.
+Esa tendencia no es un detalle fisiológico accidental. Es el primer principio de extremum del modelo freudiano. En términos que el Capítulo 4 reconocerá, se parece a un flujo que desciende un funcional hasta un mínimo. El paralelo no es identidad: Freud habla de neuronas y de cantidad nerviosa, no de métricas ni de curvatura. Pero la forma lógica —un sistema que tiende a reducir una magnitud— es la que autoriza, en el Capítulo 5, a pensar la contrainvestidura como un flujo de tipo gradiente.
+Conviene no forzar el paralelo. El principio de inercia del Entwurf no «es» la ecuación de Ricci. Es una autorización de forma: hay una magnitud, hay una tendencia a reducirla, hay un estado de reposo ideal. El modelo geométrico hereda esa forma y la realiza con otras variables.
+2.2.3 La necesidad de la vida y el principio de constancia
+La vida, escribe Freud, obliga al sistema a renunciar al nivel Q = 0. Hay que acumular una reserva para hacer frente a las exigencias del mundo. La tendencia se modifica: ya no se busca el cero, sino mantener la cantidad lo más baja y constante posible. Es el principio de constancia.
+La dualidad inercia / constancia es crucial para el modelo. La inercia sola daría un colapso; la constancia introduce un régimen de equilibrio bajo restricción. En el lenguaje del flujo de Ricci, hay un paralelo con un flujo que desciende un funcional pero opera bajo condiciones de borde o bajo una restricción de escala. El Capítulo 5 no identifica Q con la curvatura escalar; usa la dualidad freudiana como autorización para pensar un flujo que no extingue todo, sino que redistribuye y estabiliza.
+En el modelo 3D esta dualidad reaparece con otra fuerza: sin un inconsciente fijo como borde, el flujo en S²×S¹ se extingue en tiempo finito (Colding–Minicozzi). El principio de constancia, leído como exigencia de un régimen que no colapsa, encuentra así un eco en la necesidad de condiciones de borde para evitar la extinción.
+2.2.4 Cantidad Q y neuronas ?, ?, ?
+El Proyecto distingue tipos de neuronas. Las ? reciben estímulos del exterior y tienden a descargar. Las ? son el asiento de la memoria y del yo. Las ? se vinculan con la percepción consciente. La cantidad Q (y su variante Q?) es la magnitud que circula y se acumula. Las barreras de contacto entre neuronas ? tienen grados de permeabilidad: de ahí nace la facilitación.
+No se pretende aquí reconstruir el mapa neuronal completo ni decidir si la distinción ?/?/? es sostenible a la luz de la neurociencia contemporánea. Se retiene lo que el modelo geométrico necesita: hay una magnitud; hay elementos que la portan; hay conexiones con pesos variables; hay una distinción entre lo que pasa (percepción) y lo que queda (memoria).
+El modelo del Capítulo 5 pospone, por decisión del autor [A], un desarrollo completo de la variable Q. La Definición 4 ofrece un esquema mínimo de difusión sobre el grafo; la circulación y la repetición se cargan sobre los axiomas 5 y 6 (ciclo límite). Esta posposición no niega la importancia de Q en el Entwurf: declara que el primer tramo del modelo puede avanzar con Bahnung, marcas y borde fijo, y dejar el refinamiento de Q para un segundo momento.
+2.3 Bahnung: la memoria como facilitación
+2.3.1 No hay copia, hay grado de permeabilidad
+Uno de los rasgos más modernos del Proyecto es su rechazo de la memoria como copia o imagen almacenada. La memoria es el grado de Bahnung (facilitación) entre neuronas: cuánto más permeable se ha vuelto una barrera de contacto por el paso previo de cantidad. Recordar es, en este sentido, recorrer un camino ya facilitado.
+En el texto alemán del Entwurf, las Kontaktschranken (barreras de contacto) aparecen con frecuencia notable. La memoria no reside en una neurona aislada, sino en la relación entre neuronas. Eso autoriza, en el modelo del Capítulo 5, a representar las marcas (Vorstellungsrepräsentanzen) como vértices de un grafo y la Bahnung como el peso w de las aristas. El grafo ? no es una metáfora ornamental: es la traducción más directa posible de la tesis freudiana de que la memoria es facilitación.
+La palabra «contacto» adquiere, además, una resonancia geométrica en el modelo: la cúspide del Horn Torus es el punto donde la superficie se toca a sí misma. No se afirma que Freud haya pensado en una cúspide; se registra que el vocabulario del contacto está saturado en el Entwurf y que el modelo lo recoge en más de un registro (barreras de contacto; contacto de la superficie consigo misma en c).
+2.3.2 Consecuencias para el modelo
+Si la memoria es peso de arista, entonces se siguen varias consecuencias que el Capítulo 5 formaliza:
+• Una marca puede estar presente (vértice) y sin embargo no ser recorrida si sus aristas tienen peso bajo.
+• La pulsión, modelada como flujo de cantidad, solo circula por los circuitos cuyo peso supera un umbral ? (Axioma 4).
+• La Nachträglichkeit puede pensarse como un salto de carga en un vértice que ya estaba conectado a un circuito cargado (Axioma 7): el circuito ya existía; lo que cambia es la intensidad en el vértice.
+• Tras una cirugía que elimina un vértice, hace falta una regla de reorganización de aristas (problema abierto del Capítulo 7).
+Estas traducciones no se inventan en el vacío. Se apoyan en la Bahnung del Entwurf [VT] y en la decisión de modelado [A] de tratar ? como grafo de relaciones realizado, cuando hace falta, por arcos geodésicos sobre la superficie.
+2.4 Das Ding y el Nebenmensch
+2.4.1 El pasaje del Entwurf (pp. 415-416 Imago)
+En un pasaje central del Entwurf, Freud describe el complejo del prójimo (Nebenmensch). El prójimo es a la vez el primer objeto de satisfacción, el primer objeto hostil y la única fuerza auxiliadora. Su complejo perceptivo se divide: una parte permanece unida como cosa (Ding); otra se comprende por la memoria del propio cuerpo. Esa descomposición es, dice Freud, reconocer.
+El Ding es, por tanto, el resto constante del objeto: lo que no se reduce a la representación que el sujeto puede articular a partir de su propio cuerpo. En la tradición posterior, Lacan identificará lo Real con ese Ding. Esta tesis adopta esa afinidad con cautela y en la medida declarada en el Capítulo 1: usa el Ding del Entwurf como autorización para pensar una superficie (o una 3-variedad) que no se reduce a las marcas inscritas sobre ella.
+2.4.2 Ding, superficie y cúspide
+En el modelo 2D, la superficie tipo Horn Torus hace las veces de ese soporte. La cúspide c es un punto singular donde la superficie se comporta de modo distinto (dos cuernos que se tocan). El modelo coloca allí el puerto de la voz y del oído (Axioma 9). No se afirma que Freud haya pensado en una cúspide: se afirma que el Ding como resto no representable autoriza un lugar geométrico que no es una marca más.
+En el modelo 3D, el 2-esqueleto de S²×S¹ recupera el papel del Horn Torus, y el volumen permite desplegar la región Pcc/Cc. De nuevo: el Ding no «es» S²×S¹; el modelo usa la irreductibilidad del Ding para justificar un espacio que no se reduce a la lista de marcas.
+La lectura del Nebenmensch también anticipa, sin desarrollarlo, el problema del otro en la constitución del aparato. El modelo no formaliza la intersubjetividad; declara esa exclusión en el Capítulo 1. Pero el hecho de que el Ding nazca del complejo del prójimo impide reducir lo Real a un residual solipsista.
+2.5 La carta 52: el esquema de las transcripciones
+2.5.1 W, Wz, Ub, Vb, Bews
+En la carta 52 (Imago, p. 186) [VT], Freud propone un esquema de transcripciones (Niederschriften) sucesivas. W (Wahrnehmung, percepción) no guarda huella. Luego aparecen Wz, Ub (Unbewusstsein), Vb (Vorbewusstsein) y Bews (Bewusstsein). Freud afirma que conciencia y memoria se excluyen: el sistema de la conciencia no retiene huellas del modo en que lo hace el sistema de la memoria.
+El Vb queda ligado a las Wortvorstellungen (representaciones de palabra) y es descrito como «nuestro yo oficial». El pensar consciente se asocia a la animación alucinatoria de esas palabras. Este pasaje es el ancla freudiano del Axioma 9: lo observable del sistema pasa por la palabra y, en el modelo, por la voz que sale por la cúspide.
+2.5.2 Conciencia y memoria se excluyen
+La tesis de que conciencia y memoria se excluyen refuerza la separación de niveles del Axioma de método M4: el tiempo del flujo (defensa, Pcc/Cc) no es el tiempo del Icc. Las marcas del inconsciente no «fluyen» con t; la defensa sí. La carta 52 no dice eso en el lenguaje del flujo de Ricci, pero autoriza la separación entre un registro que retiene sin tiempo (memoria inconsciente) y un registro ligado a la palabra y a la conciencia.
+En el modelo, esa separación se implementa de modo estricto: la estructura (S, V, ?, n) es invariante respecto de t entre eventos; el flujo de Ricci evoluciona la métrica solo en ?. La carta 52 no demuestra el Axioma 8; lo hace pensable sin violencia al texto.
+2.6 Nachträglichkeit y fantasías
+2.6.1 La carta del 14 de febrero de 1897
+En la carta del 14.2.1897 (Imago, p. 247) [VT], Freud explica que el recuerdo de una irritación infantil, años después, produce una descarga mucho mayor que la original, porque el aparato y el monto de secreción han crecido. Es una de las formulaciones más claras de la Nachträglichkeit: el efecto no coincide con el momento del suceso; se produce después, con otra intensidad.
+En el modelo, eso se traduce como un salto de carga a? con una ganancia g(t) ? 1 (Definición 7 del Capítulo 5). El circuito ya estaba cargado; lo que cambia es la intensidad en el vértice. Un recuerdo ordinario actuaría con g = 1; la posterioridad introduce g > 1. La forma funcional de g queda abierta (Capítulo 7); lo que se fija aquí es el principio.
+2.6.2 La carta del 2 de mayo de 1897
+En la carta del 2.5.1897 [VT], Freud afirma que las fantasías provienen de lo oído y comprendido nachträglich, y las llama construcciones protectoras (Schutzbauten). Aquí convergen tres hilos del modelo: (1) el oído y la palabra (carta 52, Afasia); (2) la posterioridad; (3) el estatuto de construcción, no de recuerdo simple.
+Este pasaje anticipa el tratamiento de «Pegan a un niño» en el Capítulo 6: las fases 1 y 2 de la fantasía de paliza son construcciones, no recuerdos recuperables del modo en que lo es un trauma reprimido elaborable. La carta de 1897 no habla de las tres fases de 1919, pero ya establece que la fantasía puede ser construcción protectora hecha con material oído y comprendido después.
+2.6.3 Consecuencia para los Axiomas 7 y 10
+La Nachträglichkeit justifica los saltos de carga. El carácter de construcción de las fantasías justifica que el núcleo de la fantasía (marca primaria n) no se trate como marca traumática recuperable (VT). La cirugía del Axioma 10 opera sobre VT, no sobre n. Esa distinción no se inventa en el Capítulo 5: se apoya en la diferencia, ya visible en 1897 y explícita en 1919, entre lo que se construye y lo que se recuerda.
+2.7 Sachvorstellung y Wortvorstellung: una corrección necesaria
+En la tradición secundaria circula a veces la fórmula «representación consciente = Sachvorstellung + Wortvorstellung» atribuida al Entwurf. En la edición Imago, esa fórmula aparece en una nota del editor (p. 445) que remite a Lo inconsciente (1915, GW X, p. 300). No está en el texto del Proyecto [VT].
+La tesis corrige esa atribución. La distinción Sach / Wort se cita a partir de 1915. Lo que sí está en el Entwurf y en la carta 52 es la ligazón del Vb con las representaciones de palabra y la centralidad de lo acústico. La Afasia (1891) refuerza ese punto. La corrección importa para no inflar el Proyecto con tesis de 1915 y para citar con precisión cuando se invoque la fórmula completa.
+2.8 La Afasia (1891) y la imagen sonora
+En Zur Auffassung der Aphasien (1891), Freud descompone la representación de palabra y otorga un lugar central a la imagen sonora. La palabra no es un bloque unitario: tiene componentes (sonoro, motor, visual, etc.), y el núcleo asociativo pasa por lo acústico.
+Para el modelo, este texto respalda el vínculo oído–palabra–preconsciente que el Axioma 9 coloca en el puerto de la cúspide. La voz que sale (y) y lo oído que entra (u) comparten el mismo borde geométrico. No es una tesis sobre la localización cerebral de la afasia: es una tesis sobre el privilegio de lo sonoro en la articulación de lo consciente, ya presente en 1891 y retomado en la carta 52.
+Esta referencia se conserva como fuente de apoyo para el vínculo entre palabra e imagen sonora.
+2.9 Seitenbesetzung y el gasto de la defensa
+2.9.1 El pasaje del Entwurf (pp. 408-409)
+En el Entwurf (Imago, pp. 408-409) [VT], Freud describe cómo el Yo frena un recuerdo que produciría displacer mediante una Seitenbesetzung (investidura lateral): desvía cantidad hacia otras vías y paga el gasto con recursos propios. Es el antecedente más claro, en 1895, de lo que en 1915 se llamará Gegenbesetzung (contrainvestidura).
+La idea central es que reprimir o mantener a distancia no es gratis. Hay un Aufwand (gasto). El Yo invierte energía para que lo displacentero no irrumpa. Esta idea atraviesa la metapsicología posterior y es uno de los puntos de anclaje más firmes del modelo.
+2.9.2 Traducción al modelo: contrainvestidura con borde fijo
+En el Capítulo 5 y en la sección formal de contrainvestidura, ese gasto se traduce así: el flujo de Ricci actúa solo en la región ? (Pcc/Cc); las marcas del Icc son condición de borde fija; cuando una marca se activa y cambia el borde, Gauss–Bonnet obliga a redistribuir la curvatura en todo ?. La defensa no puede pagar en un solo punto: reorganiza el conjunto. Ese carácter global del gasto es una predicción del formalismo apoyada en la Seitenbesetzung del Entwurf.
+El término Gegenbesetzung de 1915 [M] consolida la noción. Mientras no se verifique página por página, se usa el pasaje de 1895 como ancla [VT] y se declara la continuidad conceptual. La sección formal ya redactada (Capitulo_5_Seccion_Contrainvestidura.docx) desarrolla la argumentación completa.
+2.10 Atemporalidad del inconsciente
+Freud afirma la atemporalidad de los procesos del sistema Icc en Lo inconsciente (1915) [M]. En el modelo, esa tesis se opera como Axioma 8: la estructura (S, V, ?, n) no depende del tiempo t del flujo; las cargas no decaen entre eventos; solo cambian por saltos de Nachträglichkeit o por cirugía.
+La verificación de la fuente se registra como [VW]. La coherencia con el Proyecto y con la carta 52 (conciencia y memoria se excluyen) permite, sin embargo, sostener la separación de niveles ya en este capítulo: hay un registro que retiene sin tiempo y un registro que elabora en el tiempo. El Axioma de método M4 eleva esa separación a regla del trabajo.
+2.11 Trauma, represión y lo construido
+El modelo distingue marcas traumáticas recuperables (VT) y la marca primaria n (nunca consciente, nunca recuperable). Esa distinción se apoya en la clínica freudiana de lo reprimido elaborable versus lo que solo se construye en el análisis (fase 2 de Pegan a un niño; Construcciones en el análisis, 1937 [M]).
+La carta del 30.5.1896 (Imago, p. 175) [VT] sitúa las escenas de la histeria en los primeros años, cuando faltaba la traducción a representaciones de palabra. El resumen secundario a veces lee allí una teoría de la conversión somática; en la carta, el énfasis está en la falta de traducción a palabras. La tesis respeta el texto: la falta de Wortvorstellung deja huellas que después se reactivan o se construyen.
+El Capítulo 6 corrige una identificación errónea que en borradores previos asignaba la fase 1 de la fantasía de paliza a una marca de VT. Tanto la fase 1 como la fase 2 son construcciones; solo la fase 3 es la forma consciente. El trauma recuperable existe en el modelo, pero no se confunde con esas fases.
+2.12 El yo y el ello: nota sobre el casquete acústico
+En El yo y el ello (1923) Freud describe el superyó en relación con el oído y habla del casquete acústico [M]. La fuente se registra como [VW] y refuerza el Axioma 9: oído, voz y superyó comparten el puerto de la cúspide. Mientras tanto, el ancla firme sigue siendo la carta 52 y la Afasia.
+2.13 Puente sistemático hacia el modelo geométrico
+Se resume la traducción que el Capítulo 5 ejecuta, con la fuente freudiana de cada flecha:
+• Principio de inercia / constancia [VT Entwurf] ? autorización de un flujo de tipo gradiente (contrainvestidura).
+• Bahnung / Kontaktschranken [VT Entwurf] ? pesos w del grafo ?.
+• Ding / Nebenmensch [VT Entwurf pp. 415-416] ? superficie S como soporte no reducible a las marcas.
+• Carta 52 / Wortvorstellungen [VT] / Afasia ? puerto de la voz y del oído en c; y(t) como observable.
+• Nachträglichkeit [VT cartas 1897] ? saltos de carga a? con ganancia g ? 1.
+• Fantasías como construcciones [VT 1897; 1919] ? marca primaria n no operable.
+• Seitenbesetzung / Aufwand [VT Entwurf pp. 408-409] ? flujo en ? con borde fijo; gasto = redistribución (Gauss–Bonnet).
+• Atemporalidad del Icc [M 1915] ? estructura fija respecto de t; flujo solo en Pcc/Cc.
+Ninguna de estas flechas afirma que Freud haya pensado en variedades riemannianas. Afirman que las formas lógicas del texto freudiano admiten esa traducción sin traicionar los pasajes citados.
+2.14 Límites de este capítulo
+Este capítulo no cubre: la segunda tópica completa (ello, yo, superyó como instancias desarrolladas); la teoría de la libido en detalle; el más allá del principio de placer más allá de la repetición como hecho; la técnica analítica; la transferencia como objeto formal. Esas exclusiones son las del Capítulo 1: se trabaja un fragmento orientado al modelo.
+Tampoco se pretende que el Proyecto sea la «verdadera» metapsicología de Freud. Se pretende que es la cantera más formalizable para los conceptos que el modelo necesita, y que los textos de 1915–1919 completan lo que el Proyecto no da (atemporalidad explícita, Gegenbesetzung, fantasía de paliza).
+Las citas [M] deberán verificarse antes de la versión de entrega. Mientras tanto, el peso argumentativo recae en los pasajes [VT].
+2.15 Transición al Capítulo 3
+El Capítulo 3 introduce a Poincaré: el grupo fundamental (lazos contraíbles y no contraíbles), la conjetura, los ciclos límite y la invención matemática como trabajo inconsciente. Con el aparato freudiano de este capítulo y las herramientas topológicas y dinámicas de Poincaré, el Capítulo 4 podrá presentar el flujo de Ricci y el Capítulo 5 podrá construir el diccionario.
+El lector que haya seguido las citas [VT] dispone ya de los pasajes que sostienen Bahnung, Ding, carta 52, Nachträglichkeit, Seitenbesetzung y el estatuto de construcción de las fantasías. El resto de la tesis no debería invocar «Freud» en abstracto allí donde puede invocar estos lugares del texto.
+2.16 Resumen del capítulo
+• El Proyecto ofrece una economía con inercia, constancia, cantidad Q y facilitación.
+• La memoria es Bahnung, no copia: de ahí el grafo ?.
+• El Ding es resto constante del Nebenmensch: de ahí la superficie como soporte.
+• La carta 52 liga el preconsciente a la palabra y separa conciencia y memoria.
+• La Nachträglichkeit introduce saltos de intensidad posteriores.
+• Las fantasías pueden ser construcciones protectoras hechas con lo oído.
+• Sach + Wort es de 1915, no del Entwurf.
+• La Afasia privilegia la imagen sonora.
+• La Seitenbesetzung es el antecedente del gasto de la contrainvestidura.
+• La atemporalidad del Icc se opera como invariancia de la estructura respecto de t.
+• Trauma recuperable y fantasía construida se distinguen; la cirugía solo toca lo primero.
+— Fin del Capítulo 2 —
+Capítulo 3. Poincaré: Analysis Situs, la conjetura y la invención
+Grupo fundamental, ciclos límite y trabajo inconsciente del matemático.
+3.1 Introducción al capítulo
+Este capítulo reúne las tres piezas que Poincaré aporta al modelo de la tesis. Primera: el Analysis Situs y el grupo fundamental, lenguaje de lazos contraíbles y no contraíbles, indispensable para hablar de repetición que no se puede deshacer. Segunda: los ciclos límite de la teoría cualitativa de ecuaciones diferenciales, objeto matemático del circuito de la fantasía. Tercera: la descripción, en «La invención matemática», de un trabajo inconsciente que prepara la iluminación consciente, sistematizado después por Hadamard.
+Las tres piezas no son adornos culturales. Sin el grupo fundamental, el Axioma 6 (indestructibilidad) carece de herramienta. Sin los ciclos límite, el Axioma 5 (núcleo como sumidero con atractor) carece de objeto clásico. Sin la psicología de la invención, el puente entre topología e inconsciente parecería una proyección del psicoanálisis sobre la matemática; con ella, es también una afirmación del propio Poincaré.
+El capítulo no demuestra la conjetura de Poincaré ni reconstruye la historia completa del Analysis Situs. Expone lo necesario para que el lector psicoanalista siga el diccionario del Capítulo 5 y para que el lector matemático localice qué resultados se usan y cuáles no.
+3.2 Analysis Situs y el grupo fundamental
+3.2.1 Qué es el Analysis Situs
+Poincaré publica el Analysis Situs en 1895 y lo completa con una serie de complementos, entre ellos el Quinto complemento (1904). El Analysis Situs es el nombre que da a lo que hoy llamamos topología algebraica en sus inicios: el estudio de las propiedades de las figuras que permanecen invariantes bajo deformaciones continuas, sin cortes ni pegados.
+A diferencia de la geometría métrica, que mide distancias y ángulos, el Analysis Situs se ocupa de conectividad, agujeros, lazos y la posibilidad de deformar unos en otros. Dos espacios pueden ser muy distintos métricamente y sin embargo equivalentes desde el punto de vista del Analysis Situs si uno puede deformarse continuamente en el otro.
+3.2.2 El grupo fundamental
+El grupo fundamental de un espacio, denotado ??, clasifica los lazos cerrados basados en un punto módulo homotopía: dos lazos se consideran equivalentes si uno puede deformarse continuamente en el otro sin salir del espacio. El producto en el grupo es la concatenación de lazos. El elemento neutro es la clase de los lazos contraíbles a un punto.
+Si ?? es trivial (solo el elemento neutro), todo lazo se puede contraer: el espacio es simplemente conexo (en el sentido de ??). Si ?? no es trivial, hay lazos que no se pueden deshacer. Un ejemplo clásico: en el círculo S¹, el lazo que da una vuelta completa no es contraíble; ??(S¹) ? ?. En la esfera S², todo lazo se puede contraer; ??(S²) es trivial.
+Para el modelo de la tesis, el grupo fundamental es la herramienta natural del Axioma 6. Un circuito de la pulsión que rodea el núcleo de la fantasía y no se puede contraer en S?{n} tiene índice de giro no nulo; en dimensión 3, un lazo cuya clase genera ??(M) ? ? es indestructible bajo homeomorfismos y bajo el flujo suave. La repetición clínica encuentra aquí un análogo topológico: hay caminos que vuelven y no se pueden borrar por deformación continua.
+3.2.3 Lazos contraíbles y no contraíbles en el modelo
+En dimensión 2, la indestructibilidad del ciclo C? se argumenta con el índice de giro: w(C?, n) = ±1, de modo que C? no es null-homotópico en S?{n}. El flujo de Ricci suave deforma la métrica sin cambiar la topología de la superficie; por tanto no elimina la clase de C?.
+En dimensión 3, quitar un punto o una bola no crea lazos nuevos en el mismo sentido: la indestructibilidad pasa a ser un hecho del grupo fundamental de M = S²×S¹, que es cíclico infinito. Cortar la esfera esencial ?? = S²×{pt} y tapar produciría S³ y destruiría ??; esa cirugía está prohibida en el modelo precisamente porque destruiría la fantasía.
+La distinción entre deformación continua (que preserva ??) y cirugía (que puede cambiarlo) es la distinción entre el trabajo de la contrainvestidura (flujo suave) y el acto analítico de extracción (cirugía de Perelman). Poincaré aporta el lenguaje de la primera; Perelman, el de la segunda.
+3.3 La conjetura de Poincaré
+3.3.1 Enunciado
+La conjetura de Poincaré afirma, en su forma clásica, que toda 3-variedad cerrada y simplemente conexa es homeomorfa a la 3-esfera S³. «Simplemente conexa» significa aquí que todo lazo se puede contraer a un punto, es decir, que el grupo fundamental es trivial (y, en formulaciones más precisas, que la variedad es homotópicamente equivalente a S³).
+Poincaré la formula en el contexto del Analysis Situs tras haber propuesto y descartado versiones más débiles. Durante casi un siglo permanece abierta. Hamilton introduce el flujo de Ricci como herramienta para abordarla; Perelman completa la demostración con el flujo de Ricci con cirugía (2002–2003).
+3.3.2 Qué usa y qué no usa esta tesis
+Esta tesis no demuestra la conjetura ni reconstruye la prueba de Perelman. Usa dos consecuencias conceptuales:
+• Primera: existe un criterio topológico (simple conexidad) que caracteriza a S³ entre las 3-variedades cerradas.
+• Segunda: el camino que llevó a la demostración pasa por un flujo que deforma métricas según su curvatura y por una cirugía que corta singularidades.
+En el modelo 3D, S³ aparece como el ideal de un espacio sin lazos no contraíbles: un «Yo integrado» sin resto de repetición. Llegar a S³ exigiría matar ??. El modelo declara esa operación prohibida: la fantasía es lo que impide la integración total. La conjetura de Poincaré, leída desde el modelo, no es un teorema clínico; es el marco que hace preciso qué significaría «simplemente conexo» y por qué el aparato del modelo no lo es.
+3.3.3 Dimensión 2 y dimensión 3
+En dimensión 2 la clasificación de superficies es clásica y no requiere el flujo de Ricci en el mismo sentido. El modelo base trabaja en 2D por simplicidad de las ecuaciones (Ric = K·g) y por Gauss–Bonnet. La conjetura de Poincaré es un teorema de dimensión 3; por eso el modelo 3D (S²×S¹) es la extensión natural cuando se quiere que la cirugía sea espontánea y que la indestructibilidad sea un hecho de ?? global.
+El texto inicial del Horn Torus confundía estas dimensiones. El Capítulo 1 y la evaluación del texto de partida corrigen esa confusión. Poincaré, en este capítulo, queda del lado de la herramienta correcta: ?? y, en 3D, la conjetura como horizonte de lo simplemente conexo.
+3.4 Ciclos límite
+3.4.1 Poincaré y la dinámica cualitativa
+En los años 1880–1882 Poincaré desarrolla la teoría cualitativa de las ecuaciones diferenciales. En lugar de buscar soluciones explícitas, estudia el comportamiento global de las trayectorias: puntos de equilibrio, estabilidad, y órbitas periódicas aisladas que atraen o repelen las trayectorias vecinas. A esas órbitas periódicas aisladas las llama ciclos límite.
+Un ciclo límite atractor es una curva cerrada a la que tienden las soluciones que parten de un entorno, sin alcanzar necesariamente un punto de equilibrio. Es un objeto de la dinámica, no solo de la topología: tiene que ver con el campo de vectores y con la estabilidad, no solo con la clase de homotopía.
+3.4.2 El ciclo C? del modelo
+En el Axioma 5 del Capítulo 5, el núcleo de la fantasía se modela como un sumidero con radio de angustia ?. La ley radial ? = ??(r ? ?), junto con una rotación ?? = ?, produce un ciclo límite atractor C? = {r = ?}. La pulsión tiende hacia el núcleo, pero no lo alcanza: bordea el disco de angustia y se repite.
+Ese objeto es, históricamente, un objeto de Poincaré. La tesis no inventa el ciclo límite para ilustrar la fantasía: recupera un concepto clásico de la dinámica y le asigna el papel del circuito de repetición alrededor de lo que nunca se recuerda. La estabilidad estructural (exponente de Floquet negativo) refuerza la indestructibilidad: una perturbación pequeña del campo conserva un ciclo cercano.
+La distinción entre ciclo límite (dinámica) y clase en ?? (topología) importa. En 2D ambas se refuerzan: C? tiene índice de giro ±1 y es atractor. En 3D la indestructibilidad se carga sobre ??; el núcleo sigue siendo el ancla de la distancia ? (angustia), pero no aporta por sí solo la topología.
+3.5 La invención matemática y el trabajo inconsciente
+3.5.1 «La invención matemática» (1908)
+En Science et méthode (1908), Poincaré incluye el ensayo «La invención matemática». Describe su propia experiencia: largos períodos de trabajo consciente, interrupciones, y de pronto la iluminación —la solución aparece con certeza, a veces en un momento de descanso o de viaje. Poincaré interpreta esa iluminación como la señal de un trabajo inconsciente previo: el yo consciente no estaba combinando las piezas, pero «algo» las combinaba y seleccionaba.
+No se trata de un texto de psicoanálisis. Se trata de un matemático del primer rango que afirma, desde dentro de la práctica matemática, que la invención depende de un trabajo que no es el del pensamiento consciente controlado. Hadamard, décadas después, sistematiza el relato de Poincaré (y el de otros matemáticos) en cuatro fases: preparación, incubación (inconsciente), iluminación y verificación.
+3.5.2 Por qué importa para esta tesis
+Si el puente entre topología e inconsciente fuera solo una proyección del psicoanálisis sobre Poincaré, la tesis sería unilateral. El ensayo de 1908 invierte la dirección: es el matemático el que invoca un trabajo inconsciente. La tesis no necesita que la psicología de la invención de Poincaré sea «verdadera» según los estándares de la psicología cognitiva contemporánea. Necesita que sea un testimonio interno de la tradición que aquí se usa.
+Cuando el Capítulo 5 invoca el grupo fundamental para hablar de repetición, no se está violentando a Poincaré: se está usando su herramienta topológica en un dominio que él mismo vinculó, en otro registro, con el inconsciente. Cuando se invoca el ciclo límite, se usa su herramienta dinámica. Cuando se invoca la incubación, se usa su testimonio sobre el trabajo que no es consciente.
+3.5.3 Hadamard y las cuatro fases
+Hadamard (Essay on the Psychology of Invention in the Mathematical Field, 1945) ordena el proceso en: (1) preparación consciente; (2) incubación, en la que el problema no se trabaja deliberadamente; (3) iluminación o insight; (4) verificación consciente. La fase 2 es el análogo más cercano, en este vocabulario, a un trabajo del Icc.
+La tesis no identifica la incubación hadamardiana con el Icc freudiano. Señala la convergencia de vocabulario y de experiencia: hay un trabajo que no es el del yo oficial (carta 52) y que, sin embargo, produce efectos en la conciencia. El modelo geométrico no formaliza la incubación; formaliza la estructura que, en Freud, hace posible que haya formaciones no conscientes con efectos. Poincaré y Hadamard legitiman históricamente el cruce; no sustituyen el diccionario freudiano.
+3.6 Poincaré tres veces en la tesis
+Se resume el triple papel de Poincaré:
+• 1. Autor del Analysis Situs y del grupo fundamental: herramienta de la repetición y de la indestructibilidad (Axioma 6; modelo 3D).
+• 2. Autor de los ciclos límite: objeto dinámico del circuito de la fantasía (Axioma 5).
+• 3. Autor de una psicología de la invención que afirma el trabajo inconsciente: puente histórico entre matemática e inconsciente.
+Las tres caras se articulan. La topología da invariantes. La dinámica da atractores. La invención da legitimidad al cruce. Ninguna de las tres demuestra el modelo; las tres lo hacen posible sin arbitrariedad.
+3.7 Relación con el flujo de Ricci y con Perelman
+Poincaré no conoce el flujo de Ricci. El flujo es de Hamilton (1982) y la demostración de la conjetura es de Perelman (2002–2003). La conexión es de problema y de herramienta: Poincaré formula la conjetura; el siglo XX inventa el flujo; Perelman lo lleva a término con cirugía.
+Para el modelo, eso significa que Poincaré aporta el enunciado y el lenguaje topológico, y Perelman aporta la dinámica de la métrica y el acto de cortar. El Capítulo 4 desarrolla Perelman. Este capítulo deja sentado que el horizonte de lo simplemente conexo y el lenguaje de los lazos son de Poincaré, y que sin ellos la cirugía de Perelman no tendría, en el modelo, el mismo sentido clínico-formal (extraer sin destruir la fantasía).
+3.8 Qué no hace este capítulo
+No ofrece una biografía de Poincaré. No reconstruye la prueba de la conjetura. No discute las generalizaciones en dimensión superior (Smale, Freedman, Perelman en dimensión 3). No desarrolla la teoría de Morse ni la homología más allá de lo que ?? exige. No identifica el Icc freudiano con la incubación hadamardiana.
+Esas exclusiones son coherentes con el Axioma de método M1: analogía controlada, no identidad. Poincaré entra en la tesis como proveedor de herramientas y de un testimonio sobre el inconsciente, no como anticipación del psicoanálisis.
+3.9 Puente hacia el Capítulo 4 y el Capítulo 5
+Con Freud (Capítulo 2) se tienen: magnitud y principio de extremum, facilitación, Ding, palabra, posterioridad, construcciones, gasto de la defensa. Con Poincaré se tienen: lazos y ??, ciclos límite, horizonte de lo simplemente conexo, testimonio del trabajo inconsciente. El Capítulo 4 añadirá el flujo de Ricci, la entropía, la cirugía y el borde. El Capítulo 5 hará el diccionario.
+El lector que haya seguido este capítulo dispone del lenguaje para entender por qué C? no se puede contraer, por qué cortar la esfera esencial en S²×S¹ destruiría la fantasía, y por qué invocar a Poincaré no es un adorno. El resto es ejecución del diccionario.
+3.10 Resumen
+• Analysis Situs: propiedades invariantes bajo deformación continua.
+• Grupo fundamental ??: clasificación de lazos módulo homotopía; herramienta del Axioma 6.
+• Conjetura de Poincaré: toda 3-variedad cerrada simplemente conexa es S³; horizonte de lo sin resto de lazos.
+• Ciclos límite: órbitas periódicas aisladas de la dinámica cualitativa; objeto del Axioma 5.
+• Invención matemática: trabajo inconsciente previo a la iluminación; puente histórico.
+• Hadamard: preparación, incubación, iluminación, verificación.
+• Poincaré tres veces: topología, dinámica, invención.
+• Perelman continúa el problema de Poincaré con el flujo y la cirugía (Capítulo 4).
+Capítulo 4. Flujo de Ricci y entropía de Perelman
+Ecuación, cirugía, borde, Horn Torus y puentes con el modelo.
+4.1 Introducción al capítulo
+Este capítulo expone las herramientas geométricas que el modelo toma de Hamilton y Perelman, y el respaldo del flujo con borde (Gianniotis). No demuestra la conjetura de Poincaré ni reconstruye la prueba completa de Perelman. Enuncia lo necesario para que el diccionario del Capítulo 5 sea legible: la ecuación del flujo, su carácter de gradiente, la ausencia de órbitas periódicas no triviales en el espacio de métricas, la cirugía de cuellos, la extinción en tiempo finito, el flujo con borde prescrito y la geometría del Horn Torus.
+La relación con el modelo es de analogía controlada (Axioma de método M1). El flujo de Ricci no «es» la contrainvestidura; es el objeto matemático con el que se modela la defensa sobre la región ?. La cirugía no «es» el análisis; es el objeto con el que se modela la extracción del trauma recuperable. Cada puente se enuncia al final del capítulo y se formaliza en el Capítulo 5.
+Las referencias principales son: Perelman, arXiv:math/0211159 (entropía), math/0303109 (cirugía), math/0307245 (extinción) [VW]; Colding–Minicozzi, J. Amer. Math. Soc. 18 (2005) [VW]; Gianniotis, J. Differential Geom. 104 (2016) [VW]; Hamilton 1982 y 1988 [M/VW].
+4.2 La ecuación del flujo de Ricci
+4.2.1 Forma general
+Sea (M, g) una variedad riemanniana. El flujo de Ricci es la evolución de la métrica según la curvatura de Ricci:
+?g/?t = ?2 Ric(g)
+La curvatura de Ricci mide, en cada punto y en cada dirección, cómo el volumen de pequeñas bolas se desvía del volumen euclídeo. El signo negativo hace que las regiones de curvatura de Ricci positiva tiendan a contraerse y las de curvatura negativa a expandirse. Hamilton (1982) introdujo este flujo y estudió el caso de 3-variedades con curvatura de Ricci positiva.
+4.2.2 Reducción a dimensión 2
+En dimensión 2, el tensor de Ricci es proporcional a la métrica: Ric = K · g, donde K es la curvatura de Gauss. La curvatura escalar es R = 2K. El flujo se reduce a:
+?g/?t = ?R g
+La evolución de la curvatura de Gauss satisface una ecuación de reacción-difusión:
+?K/?t = ?K + 2K²
+El término ?K difunde cualquier exceso de curvatura localizado; el término 2K² es de reacción. En superficies cerradas, bajo condiciones adecuadas, el flujo tiende a uniformizar la curvatura (resultados de Hamilton 1988 y de Chow, entre otros).
+Para el modelo, esta reducción es central: el núcleo analógico se formula primero en 2D, donde Gauss–Bonnet da una ley de conservación transparente del gasto de la defensa, y las ecuaciones son elementales.
+4.2.3 Interpretación en el modelo
+El flujo se restringe a la región ? (Pcc/Cc). No actúa sobre las marcas del Icc, que son condición de borde fija (Definición 9, Axioma 8 corregido). La difusión de curvatura en ? se lee como reorganización de la defensa cuando cambia el borde (activación de una marca, Nachträglichkeit). Esa lectura se argumenta con Gauss–Bonnet en la sección de contrainvestidura.
+4.3 Entropía de Perelman
+4.3.1 El funcional y la monotonicidad
+Perelman (arXiv:math/0211159) construye un funcional W, interpretado como entropía de un ensamble canónico, cuyo gradiente (módulo difeomorfismos y reescala) es el flujo de Ricci. A lo largo del flujo, W es monótono. De ahí se deduce que el flujo, módulo difeomorfismos y escala, no tiene órbitas periódicas no triviales: no puede «ciclar» en el espacio de métricas.
+Ese resultado tensiona, en apariencia, con la compulsión de repetición. La tensión se resuelve por el Axioma de método M3: la dinámica de la pulsión sobre la superficie (ciclos de ?_?, atractor C_?) y la dinámica del flujo de Ricci en el espacio de métricas son niveles distintos. La ausencia de órbitas periódicas del flujo no prohíbe ciclos de la pulsión sobre S.
+4.3.2 Flujo de tipo gradiente
+Que el flujo sea de tipo gradiente respecto de un funcional monótono autoriza el paralelo con los principios de extremum del Entwurf (inercia, constancia): hay una magnitud (o un funcional) que el sistema tiende a mejorar. El paralelo no identifica W con Q; fija una forma común: evolución que desciende (o no aumenta) un costo.
+4.4 Cirugía
+4.4.1 Singularidades y cuellos
+Bajo el flujo de Ricci, la métrica puede desarrollar singularidades en tiempo finito. Perelman analiza la estructura de esas singularidades. En dimensión 3, las regiones típicas que se estrangulan son cuellos cilíndricos (o casi cilíndricos): zonas donde la geometría se acerca a un cilindro S² × I con radio que tiende a cero.
+La cirugía de Perelman (arXiv:math/0303109) consiste en cortar el cuello, descartar el componente singular (o las «gorras» y «horns» según el análisis de regiones), y tapar los bordes resultantes con casquetes de curvatura controlada, de modo que el flujo pueda continuar en la variedad (posiblemente desconectada) resultante.
+4.4.2 Cirugía en el modelo
+En dimensión 2 del modelo, la «cirugía» no es un estrangulamiento espontáneo del flujo (en superficies el comportamiento es más regular bajo condiciones estándar); es una intervención decidida: se identifica un cuello alrededor de una marca traumática separable, se extrae el disco que la contiene y se tapa. Corresponde al acto analítico sobre el trauma recuperable (Axioma 10).
+En dimensión 3 (M = S²×S¹), el estrangulamiento puede ser espontáneo: eso se lee como disociación. La extracción deliberada del componente que contiene la marca sigue siendo el acto analítico. Cortar la esfera esencial ?? (que generaría S³ al tapar) está prohibido: destruiría ?? y, con él, la indestructibilidad de la fantasía.
+4.4.3 Nota sobre la palabra «horn»
+En los artículos de Perelman, «horn» designa un tipo de región asintótica en el análisis de singularidades. No es el Horn Torus geométrico (superficie de revolución con r = R). El texto de partida del proyecto confundía ambos usos. Aquí se mantienen separados: Horn Torus = superficie del modelo 2D; horn de Perelman = región del análisis de singularidades.
+4.5 Extinción en tiempo finito
+Colding y Minicozzi (2005) demuestran que en 3-variedades cerradas sin sumandos asféricos el flujo de Ricci (con cirugía, en el marco de Perelman) se extingue en tiempo finito: el volumen tiende a cero y la variedad desaparece en el sentido del flujo.
+En el modelo 3D, con métrica producto en S²×S¹, el radio ? de las esferas satisface, bajo el flujo no normalizado, una ley del tipo d(?²)/dt = ?2, de modo que ?²(t) = ??² ? 2t y el colapso ocurre en T = ??²/2. Sin un inconsciente fijo como borde, la defensa (el flujo en todo M) colapsaría el espacio. El Icc como condición de borde fija es lo que puede impedir ese colapso total: el flujo se restringe a ? y las marcas no fluyen.
+4.6 Flujo de Ricci con borde
+4.6.1 El resultado de Gianniotis
+Gianniotis (J. Differential Geom. 104, 2016) establece existencia y unicidad del flujo de Ricci en variedades con borde, bajo condiciones de borde prescritas (curvatura media y clase conforme, en el marco de su trabajo). También hay resultados en superficies con borde y curvatura geodésica prescrita (arXiv:1209.2386).
+Ese cuerpo de resultados es el respaldo matemático de la contrainvestidura con borde fijo: el flujo puede plantearse solo en ?, con kg (o H en 3D) prescrita en ?? según las cargas de las marcas y la pared de angustia en n.
+4.6.2 Condiciones de borde en el modelo
+• En ?D_?(p_i): kg = h(a_i) (o H = h(a_i) en 3D).
+• En ?D_?(n): kg = 1/? (pared rígida de angustia).
+• En el entorno de c: dato u ligado a la voz/oído (par tipo
+Dirichlet–Neumann; compatibilidad fina con la teoría de Gianniotis: problema abierto del Cap. 7).
+La existencia global a tiempos largos con estas condiciones no se demuestra en la tesis; se invoca el marco de Gianniotis como garantía local de que el problema con borde está bien planteado en la literatura.
+4.7 Horn Torus y la familia de toros
+4.7.1 Definición geométrica
+El toro de revolución de radio mayor R y radio menor r se obtiene al rotar un círculo de radio r cuyo centro está a distancia R del eje. Cuando r < R hay un agujero; cuando r = R el agujero se cierra y se obtiene el Horn Torus, singular en la cúspide c.
+x² + y² + z² = 2?(x² + y²) (R = r = 1)
+Cerca de c, con s = ?(x² + y²), se tiene s ? z²/2: dos cuernos que se tocan. El grupo fundamental del toro suave es ?×?; al pasar al Horn Torus y al trabajar en S?{c} o en la familia T_r, el modelo retiene un lazo esencial compatible con la repetición (en 2D vía índice de giro alrededor de n; en 3D vía ??(S²×S¹) ? ?).
+4.7.2 Por qué no se fluye el Horn Torus singular
+S no es una variedad riemanniana suave en c. El flujo de Ricci se define sobre variedades suaves (o en contextos de métricas con singularidades controladas que esta tesis no desarrolla). Por eso se trabaja sobre T_r con r < 1, o sobre S?{c}, y se trata c como puerto (Axioma 9), no como punto regular del flujo.
+4.8 Puentes con el modelo ( Capítulos 5 y 6 )
+• Principio de inercia/constancia (Entwurf) ? flujo de tipo gradiente
+y funcional monótono (Perelman).
+• Difusión de curvatura (?K) ? reorganización de la defensa cuando
+cambia el borde (Gauss–Bonnet / Aufwand).
+• Flujo restringido a ? + borde fijo ? contrainvestidura; marcas del
+Icc atemporales (Axioma 8 corregido).
+• Cirugía de cuellos ? extracción del trauma recuperable (Axioma 10);
+no opera sobre n ni C_?.
+• Ausencia de órbitas periódicas del flujo de métricas ? nivel
+distinto de la pulsión (Definición 4 corregida: flujo dinámico sobre ?_?; C_? atractor).
+• Extinción en tiempo finito (3D) ? necesidad de borde (Icc) para que
+el espacio psíquico no colapse bajo la sola defensa.
+• Gianniotis ? existencia del problema de flujo con borde prescrito.
+4.9 Qué no hace este capítulo
+No demuestra la conjetura de Poincaré. No reproduce las estimaciones de Perelman ni el análisis completo de singularidades. No resuelve la compatibilidad fina del dato u = K en c con todas las hipótesis de Gianniotis. No desarrolla un esquema numérico del flujo. No identifica la entropía W con una magnitud clínica.
+Esas exclusiones siguen el contrato del Capítulo 1: herramientas citadas, analogía declarada, problemas abiertos listados en el Capítulo 7.
+4.10 Transición al Capítulo 5
+Con Freud (Cap. 2) y Poincaré (Cap. 3) estaban las formas del aparato y de los lazos/ciclos. Con este capítulo están el flujo, la cirugía, el borde y el Horn Torus. El Capítulo 5 construye el diccionario axiomático
+proposiciones de indestructibilidad, conservación y cirugía que no toca la fantasía.
+4.11 Resumen
+• Flujo de Ricci: ?g/?t = ?2 Ric(g); en 2D: ?g/?t = ?R g, ?K/?t = ?K +
+2K².
+• Entropía de Perelman: funcional monótono; sin órbitas periódicas no
+triviales módulo difeomorfismos y escala.
+• Cirugía: corte de cuellos, casquetes; en el modelo, extracción de
+marcas de V_T.
+• Extinción (Colding–Minicozzi): motiva el Icc como borde en 3D.
+• Borde (Gianniotis): respaldo de la contrainvestidura con marcas
+fijas.
+• Horn Torus: superficie del modelo 2D; se fluye T_r o S?{c}; c =
+puerto.
+• Puentes: gradiente ? economía; difusión ? gasto; cirugía ? cura del
+trauma; niveles de dinámica ? repetición vs. monotonicidad.
+Capítulo 5. La analogía axiomática
+5.1 Decisiones de modelado
+N.ºDecisiónConsecuencia1Trabajar en 2D (superficie), con el 3D como extensión.Ecuaciones simples del flujo de Ricci en superficies. Perelman entra por el modelo local del cuello y por la entropía.2? es un grafo de relaciones (un hilo que se recorre), no una curva.Las aristas se realizan sobre la superficie como arcos geodésicos para definir el índice de giro.3La pulsión recorre marcas por los circuitos cargados.Se modela con los ciclos del subgrafo de aristas con peso sobre un umbral.4El núcleo de la fantasía es un sumidero que la pulsión bordea.Ciclo límite alrededor del núcleo (axioma 5).5La Nachträglichkeit carga la marca; el circuito ya estaba cargado.Salto en la carga a_{i}, sin cambiar los pesos w (axioma 7).6El flujo de Ricci es la contrainvestidura y las marcas del Icc quedan fijas como condición de borde.Resuelve el choque entre inconsciente atemporal y flujo temporal.7Oído y voz comparten el lugar de la cúspide, y la voz es la del superyó.La cúspide es un puerto con dos cuernos; u entra y y sale (axioma 9).8La cura es una cirugía solo sobre el trauma, con unión suavizada.Cirugía en cuellos de marcas recuperables (axioma 10).9La fantasía es una marca primaria, nunca recordable.El núcleo n pertenece a V, no tiene aristas cargadas y no es separable.10Variante A del axioma 5: el núcleo es distinto de la cúspide.La cúspide queda como puerto de voz y oído.11Borde rígido alrededor del núcleo (la angustia como pared fija).Condición de borde k_{g} = 1/?.12Lo de Q (modelo de la cantidad) se deja para más adelante.La Definición 4 queda como modelo mínimo.13Las fases 1 y 2 de Pegan a un niño son construcciones; la fase 3 es la forma consciente.La cirugía no opera sobre las fases 1 y 2; el trauma recuperable se mantiene como categoría independiente.14Las pulsiones parciales (oral, anal, escópica, invocante) circulan alrededor del mismo núcleo.Axioma 11: cuatro ciclos límite concéntricos, homotópicos entre sí.15Lo imaginario está atado a lo simbólico; son marcas de memoria S–I distintas de las VR. Las VR son las que recorre la pulsión.Axioma 12: pares atados (s, ?) en ?, fuera de ?.16Las marcas S–I se crean de a pares; algunas se retienen y otras se disuelven. La única pulsión visible de forma directa es la invocante, por el orificio.Definición 15 y axioma 13.17Las marcas S–I se fijan por el efecto del Nebenmensch: se copia el efecto, lo transmite lo simbólico y el sujeto lo incorpora.Definición 17 y axioma 14; la parte constante del prójimo es el Ding (S) y la asimilada son las marcas S–I.18El circuito invocante es un círculo deformado que pasa por el orificio; los otros tres siguen siendo círculos.Definición 18 y Proposición 5: C_{inv} es el generador de ?_{1}(S) ? ?.
+5.2 Los diez axiomas
+1. Ding / Real. Superficie compacta S de tipo Horn Torus con cúspide c.
+2. Marcas VR. Conjunto discreto V ? S?{c} de marcas (Vorstellungsrepräsentanz) con curvatura concentrada, latentes o activas. Una de ellas, n, es la marca primaria (el núcleo de la fantasía), que nunca puede recordarse.
+3. ?. Grafo ponderado sobre las marcas; el peso es la carga (Bahnung). La marca primaria no tiene aristas cargadas.
+4. Pulsión. Flujo de cantidad que recorre solo los ciclos cuyo peso supera un umbral ?.
+5. Núcleo de la fantasía. La marca primaria n es un sumidero que la pulsión bordea por la angustia. Corresponde a la fase 2 de Pegan a un niño. Decidido: variante A (n distinto de c).
+6. Indestructibilidad. Los ciclos que rodean a n no son contraíbles en ?; el flujo suave no los elimina.
+7. Nachträglichkeit. Una marca latente se activa cuando un evento posterior eleva su carga a_{i} por encima de un umbral a*.
+8. Estructura atemporal del Icc; pulsión dinámica. La estructura (S, V, ?, n) es invariante entre eventos y cirugías. La pulsión es un proceso temporal que circula sobre ?_?; el tiempo t del flujo de Ricci pertenece a la contrainvestidura en Pcc/Cc.
+9. Voz como observable. Lo único observable del sistema es el flujo que sale por c (voz, oído, superyó, contacto, Pcc).
+10. Cura. La cirugía se aplica solo a las marcas traumáticas reprimidas: se extrae la parte traumática y se suaviza la unión; el núcleo n y su circuito no se tocan.
+5.3 Definiciones y proposiciones
+5.3.1 Axiomas 1 a 4
+Definición 1 (Ding / Real). Sea T_{r} el toro de revolución de radio mayor R = 1 y radio menor r, dado por
+?_{r}(u, v) = ( (1 + r cos v) cos u , (1 + r cos v) sin u , r sin v ), u, v ? [0, 2?)
+Para r < 1 la superficie es suave y tiene agujero. Para r = 1 el agujero se cierra: el círculo v = ? queda aplastado en el origen. Se llama S = T_{1} al Horn Torus y c = (0, 0, 0) a su cúspide. Su ecuación implícita, con s = ?(x² + y²), y su forma cerca de c son
+s² + z² = 2s (es decir, x² + y² + z² = 2?(x² + y²)), cerca de c: s ? z²/2
+S es una esfera con dos puntos identificados, y su grupo fundamental es ?_{1}(S) ? ? [estándar; verificar en la redacción final]. S no es una variedad suave en c, de modo que el flujo de Ricci solo se define sobre S?{c} o sobre la familia T_{r} con r < 1.
+Definición 2 (marcas VR). Sea V = {p_{1}, …, p_{k}} ? S?{c} un conjunto finito de puntos. A cada p_{i} se le asocia una carga a_{i} ? 0 (curvatura concentrada) y un estado ?_{i} ? {latente, activo}. El conjunto se divide en V = V_{T} ? {n}: las marcas traumáticas V_{T} (reprimidas, recuperables) y la marca primaria n (nunca consciente, nunca recuperable).
+Definición 3 (hilo ?). Sea ? = (V, E, w) un grafo no dirigido con E ? V × V y w : E ? ?_{?0}. El peso w(e) es el grado de facilitación (Bahnung) entre dos marcas. Las aristas son relaciones, pero cada una se realiza sobre S?D_{?}(n) como el arco geodésico mínimo entre sus extremos. Así, cada ciclo de ? define una curva cerrada y tiene índice de giro alrededor de n. La marca primaria n es un vértice sin aristas cargadas: w(e) = 0 para toda arista que incide en ella, de modo que la pulsión nunca la alcanza.
+Definición 4 (pulsión). Dado un umbral ? > 0, sea ?_{?} el subgrafo de las aristas con w ? ?. Un circuito es un ciclo en ?_{?}. Sea Q : V ? ?_{?0} la cantidad en cada marca y s : V ? ?_{?0} el estímulo endógeno constante (Triebfeder). El modelo mínimo es
+dQ/dt = ?L_{?} Q + s, L_{?} = D_{?} ? W_{?}
+donde W_{?} es la matriz de pesos de ?_{?} y D_{?} la matriz diagonal de sus grados. Sin s, cada componente conexa va a un nivel constante de Q, lo que refleja el principio de constancia del Entwurf. Limitación reconocida: la difusión explica la constancia pero no la circulación ni la repetición; eso se agrega con los axiomas 5 y 6. La red ? es parte de la estructura atemporal; el flujo de Q sí cambia con el tiempo del aparato. El desarrollo completo del modelo de Q queda pospuesto por decisión de modelado.
+5.3.2 Axiomas 5 y 6: núcleo e indestructibilidad
+Definición 5 (núcleo como sumidero). Sea n ? V la marca primaria, un punto regular de S?{c}. En un entorno de n se usan coordenadas polares (r, ?), con r la distancia a n. El núcleo es un sumidero: la pulsión tiende hacia él, pero acercarse más allá de un radio ? > 0 produce angustia y la repele. Se modela por
+? = ?? (r ? ?), ?? = ?, ? > 0, ? > 0
+Toda trayectoria con r > ? converge al círculo C_{?} = {r = ?}, un ciclo límite atractor. El disco {r < ?} queda excluido: la pulsión lo bordea y no lo alcanza. La ley radial es una elección mínima; cualquier ley con un cero estable en r = ? da la misma conclusión. Fuentes: fase 2 de Pegan a un niño (1919) y la angustia como señal (1926) [M].
+Definición 6 (circuito de repetición). El índice de giro de una curva cerrada ? en S?{n} alrededor de n es
+w(?, n) = (1/2?) ?_{?} d?
+El circuito de la fantasía es C_{?}, con w(C_{?}, n) = ±1.
+Proposición 1 (indestructibilidad). (i) C_{?} no es contraíble en ?, la esfera con k + 3 agujeros (marcas, núcleo y los dos bordes del orificio): su clase es la del lazo alrededor del agujero de n, que no es trivial porque hay otros agujeros. Corrección: en S sin más, el lazo alrededor de n sí es contraíble, porque S es una esfera con dos puntos identificados. (ii) C_{?} es estructuralmente estable: su exponente de Floquet es ?? < 0, así que una perturbación pequeña del campo conserva un ciclo límite cercano. (iii) El flujo de Ricci suave sobre T_{r}, con r < 1, es una familia de métricas sobre la misma variedad y no modifica las clases de homotopía de los lazos. Por (i) a (iii), el circuito de repetición persiste mientras no haya singularidad.
+5.3.3 Axiomas 7 y 8: Nachträglichkeit y atemporalidad
+Definición 7 (Nachträglichkeit). Un evento E_{j} ocurre en el instante t_{j} con magnitud m_{j} ? 0 y asociación ?_{ij} ? [0, 1] con la marca p_{i}. La carga salta en ese instante:
+a_{i}(t_{j}^{+}) = a_{i}(t_{j}^{?}) + g(t_{j}) ?_{ij} m_{j}, g(t) ? 1
+La marca pasa a estado activo cuando a_{i} ? a*. El evento no modifica los pesos w del grafo: los circuitos ya estaban cargados, y lo que cambia es la carga de la marca. La ganancia g(t) representa que, con los años, el aparato crece y la misma huella produce un efecto mayor que en su momento [VT, carta del 14.2.1897, p. 247]. Un recuerdo ordinario actúa solo como actuó como vivencia, es decir, con g = 1. Consecuencia (a cerrar con el modelo de Q): una marca activa inyecta cantidad en los circuitos ya cargados.
+Definición 8 (estructura atemporal del inconsciente). Sea U = (S, V, ?, n) la estructura inconsciente. Entre dos eventos nada en U depende del tiempo:
+da_{i}/dt = 0 (entre eventos), dw_{e}/dt = 0, n fijo
+Las cargas no decaen con el paso del tiempo y solo cambian por los saltos de la Definición 7 o por cirugía. La pulsión, en cambio, se describe por un estado de flujo sobre ?_? —o por la aproximación al ciclo límite C_?— y ese estado puede cambiar con el tiempo del aparato. Fuente: la atemporalidad de los procesos del sistema Icc en Lo inconsciente (1915) [VW].
+Definición 9 (contrainvestidura). Sea ? la región consciente y preconsciente: la superficie sin los discos D_{?}(p_{i}) alrededor de cada marca, sin el disco D_{?}(n) alrededor del núcleo y sin la cúspide c. El flujo de Ricci actúa solo sobre ?, y las marcas del Icc quedan fijas como condición de borde:
+?g/?t = ?R g en ?; k_{g} = h(a_{i}) en el borde de cada marca
+donde k_{g} es la curvatura geodésica del borde y h una función creciente de la carga a_{i}. En c, la condición la fija la voz del superyó (Definición 10). En el borde del disco alrededor de n se impone un borde rígido, k_{g} = 1/?: la angustia como pared fija. Fuentes: en el Entwurf el Yo frena el recuerdo mediante una Seitenbesetzung y paga el gasto [VT, pp. 408-409]; Gegenbesetzung es el término de 1915 [M]. Matemática: Gianniotis (2016) [VW].
+Proposición 2 (conservación de curvatura). Para una superficie lisa T_{r} con k + 1 discos removidos, Gauss–Bonnet da
+?{?} K dA + ?{??} k_{g} ds = 2? ?(?) = ?2? (k + 1)
+En el modelo con cúspide, ?? incluye también las dos circunferencias de B: S menos un entorno de c es un anillo, con ? = 0, y la fórmula resulta la misma. El flujo no destruye curvatura: la redistribuye dentro de ?. Cuando la Nachträglichkeit sube una carga a_{i}, cambia k_{g} en el borde de esa marca y la integral de K sobre ? debe compensarlo. Interpretación propuesta [P]: una marca que se activa obliga a reorganizar toda la defensa. El costo (Aufwand) de la contrainvestidura queda por definir; una candidata es un funcional monótono del capítulo 4.
+5.3.4 Axioma 9: la cúspide como puerto
+Geometría de c. Para r = 1, cerca de la cúspide la superficie obedece s ? z²/2. Son dos cuernos muy agudos, uno por encima y otro por debajo, que se tocan solo en c. El borde de un entorno pequeño de c consta de dos circunferencias, B_{+} (cuerno superior) y B_{?} (cuerno inferior). De ahí el nombre de Horn Torus.
+Definición 10 (puerto de c). Sea B = B_{+} ? B_{?} el borde de un entorno de c. Se definen dos funciones del tiempo sobre B:
+u(t) = K|{B} (lo oído), y(t) = ?{B} ?_{?}K ds (lo vocalizado)
+u es el dato de Dirichlet de la ecuación ?K/?t = ?K + 2K² en B (lo que entra a ?) e y es su flujo normal (lo que sale): forman el par de Dirichlet a Neumann. Falta garantizar (capítulo 7) que este dato sea compatible con las condiciones geométricas del flujo de Ricci. La voz del superyó es la señal u que fija la condición de borde de la contrainvestidura en c.
+Axioma 9 (formal). (a) Lo único observable del sistema es y(t). (b) Oído y voz comparten el puerto B: u e y son variables conjugadas en el mismo borde. (c) El interior (marcas, grafo, núcleo) no se observa directamente.
+Fuentes: el Vb está ligado a las representaciones de palabra [VT, carta 52, p. 186], cuyo núcleo es la imagen sonora (La afasia); las fantasías provienen de lo oído [VT, carta del 2.5.1897]; el eslabón superyó–oído se apoya en El yo y el ello (1923) [VW].
+Hipótesis para el capítulo 6 [P]. En un problema de borde elíptico, la relación entre el dato de Dirichlet y el flujo normal es el operador de Dirichlet a Neumann. Recuperar el interior a partir de él es el problema inverso de Calderón, que en dimensión 2 tiene resultados clásicos (Astala y Päivärinta, 2006) [M]. Paralelo: así como el analista solo accede a la voz del paciente y construye lo que no recuerda (fase 2 de Pegan a un niño; Construcciones en el análisis, 1937), el matemático solo accede al borde y reconstruye el interior.
+5.3.5 Axioma 10: trauma, síntoma, fantasía y cura
+Definición 11 (clasificación). Los elementos del modelo se distinguen por su relación con el recuerdo.
+• Marca traumática (p_{i} ? V_{T}). Estuvo en la conciencia y fue reprimida; por eso puede recordarse. Es latente o activa.
+• Núcleo de la fantasía (n). Es la marca primaria: pertenece a V, pero nunca fue consciente y nunca puede serlo. No se recuerda: se repite en acto, como el recorrido de C_{?}. Corresponde a la fase 2 de Pegan a un niño y a la represión primaria de 1915 [M].
+• Síntoma. Es la parte de la voz que producen las marcas activas y que la contrainvestidura no absorbe: y_{sint}(t) = y(t) ? y_{0}(t), donde y_{0} es la salida con todas las marcas latentes. Queda fuera del trauma: en el cuerpo, no en la marca.
+Fuente: carta del 30.5.1896 [VT, p. 175], donde las escenas de la histeria se ubican en los primeros cuatro años, cuando faltaba la traducción a representaciones de palabra.
+Definición 12 (cuello y cirugía). Una marca p_{i} es separable si existe una curva cerrada simple ?_{i} ? ? que acota un disco D_{i} con p_{i} ? D_{i}, n ? D_{i}, c ? D_{i}, y de longitud ?(?_{i}) < ?_{min} (un cuello). La cirugía en ?_{i} consiste en cortar a lo largo de ?_{i}, descartar D_{i} (la parte traumática), pegar un casquete suave en su lugar y seguir con el flujo de Ricci, que suaviza la unión. El efecto sobre el modelo es
+V ? V ? {p_{i}}, ? ? ? ? p_{i}, a_{i} ? 0
+es decir, se eliminan la marca y las aristas que incidían en ella. La fuente matemática es la cirugía de Perelman [VW].
+Postulado (el núcleo no es separable). La cirugía solo opera sobre marcas recuperables (V_{T}). La marca primaria n nunca puede recordarse y, por tanto, no es separable. Además se exige 2?? ? ?_{min}, de modo que ninguna curva alrededor de n es un cuello.
+Proposición 3 (la cirugía no toca la fantasía). Si p_{i} es separable, la cirugía en ?_{i} deja intacta la clase de C_{?} y su índice de giro w(C_{?}, n) = ±1. Razón: ?_{i} acota un disco que no contiene a n, y reemplazar ese disco por otro no cambia la clase de homotopía de los lazos alrededor de n. Los ciclos de ? que pasaban por p_{i} pierden ese vértice; el atractor C_{?} persiste y la pulsión se reorganiza a su alrededor con las marcas que quedan (a verificar: requiere una regla de formación de nuevas aristas). Por Gauss–Bonnet en el disco, el casquete debe aportar la curvatura total que se retira:
+?{D{i}} K dA + ?{?{i}} k_{g} ds = 2?
+Axioma 10 (formal). (a) La cirugía se aplica solo a marcas separables, es decir, al trauma y no a la fantasía. (b) La fantasía es indestructible: ninguna cirugía admisible cambia C_{?}. (c) Contingencia: el circuito dominante de ?_{?} (el de mayor flujo sostenido) se identifica solo si la salida y(t) lo distingue de los demás. Que el análisis llegue a él es contingente, porque recuperar el interior desde el borde puede no tener solución única.
+5.4 Diccionario Freud–geometría
+Concepto psicoanalíticoObjeto del modeloFuente principalDing / RealSuperficie S del Horn TorusEntwurf, pp. 415-416 [VT]Vorstellungsrepräsentanz (marca)Punto p_{i} con carga a_{i}Carta del 2.5.1897 [VT]; 1915 [M]Marca primaria, núcleo de la fantasíaPunto n sin aristas cargadas; sumideroPegan a un niño, fase 2 [M]Hilo ? y BahnungPesos w del grafo ?Entwurf, Parte I [VT]Pulsión y circuitos cargadosCiclos de ? con peso sobre ?; flujo de QEntwurf [VT]Repetición en actoCiclo límite C_{?} alrededor de n1914 [M]AngustiaRadio ? y pared rígida k_{g} = 1/?1926 [M]NachträglichkeitSalto de carga a_{i} con ganancia g ? 1Cartas del 14.2 y 2.5.1897 [VT]Estructura atemporal del IccEstructura U sin dependencia del tiempo; la pulsión es dinámica1915 [VW]ContrainvestiduraFlujo de Ricci sobre ? con borde fijoSeitenbesetzung [VT]; 1915 [VW]Preconsciente, voz, superyó, oído, contactoCúspide c como puerto: u (entra) e y (sale)Carta 52 [VT]; Afasia; 1923 [VW]Efecto del Nebenmensch (incorporación)Par S–I fijo (? = 0), entrada por uEntwurf, pp. 415-416 [VT]; [A]Trauma recordable (reprimido)Marca p_{i} ? V_{T}Carta del 30.5.1896 [VT]Síntomay_{sint} = y ? y_{0}[P]Cura analíticaCirugía en cuello de una marca separablePerelman [VW]; [A]
+5.5 Revisión de consistencia de los diez axiomas
+La relectura de los diez axiomas encontró los problemas siguientes. Quedaron resueltos mediante las decisiones de modelado, salvo lo señalado como abierto.
+Problema detectadoResoluciónALa fantasía vivía en dos capas sin conexión: el grafo abstracto ? y el círculo continuo C_{?} con índice de giro.La fantasía es una marca primaria n ? V, sin aristas cargadas. Los ciclos de ? se realizan como curvas con índice de giro alrededor de n y son atraídos hacia C_{?}. Los ciclos de ? pueden perder vértices por cirugía; el atractor persiste. Reorganización posterior: abierta.BFaltaba la condición de borde alrededor del núcleo.Borde rígido k_{g} = 1/?: la angustia como pared fija.COído y voz no eran variables conjugadas en el sentido de Dirichlet a Neumann (u era k_{g} e y flujo de K).Se tomó u = K en el borde, de modo que u e y forman el par de Dirichlet a Neumann. Falta comprobar compatibilidad con las condiciones geométricas del flujo.DLa variante B del axioma 5 (n = c) chocaba con el axioma 9.Se cerró en la variante A (n distinto de c).EEl axioma 8 afirmaba invariancia total, pero el axioma 10 elimina marcas.El axioma 8 admite como excepciones los eventos y la intervención analítica.FLa Proposición 2 omitía el borde de la cúspide.Se aclaró que ?? incluye B y que el resultado es el mismo (anillo con ? = 0).
+5.6 Contrainvestidura con borde fijo y gasto de la defensa
+5.6.1 Fuente freudiana
+En el Entwurf Freud describe que el Yo frena el recuerdo que produciría displacer mediante una Seitenbesetzung (investidura lateral): gasta energía propia para mantener la excitación lejos de la conciencia (Imago, pp. 408-409) [VT]. El término definitivo Gegenbesetzung aparece en 1915 (Lo inconsciente; La represión). La idea central es que lo reprimido no se borra: el Yo invierte un gasto continuo (Aufwand) para mantenerlo fuera.
+5.6.2 Definición geométrica
+Sea S la superficie de tipo Horn Torus (o, en la extensión 3D, M = S²×S¹). Se define la región consciente y preconsciente como el complemento de las marcas del inconsciente:
+? = S ? ( ?? D?(p?) ? D?(n) ? {c} )
+donde D?(p?) son discos alrededor de las marcas traumáticas recuperables, D?(n) es el disco de angustia alrededor del núcleo de la fantasía y c es la cúspide (puerto de la voz). En dimensión 3 se reemplazan los discos por bolas abiertas; las fronteras pasan a ser esferas.
+Definición (contrainvestidura con borde fijo). El flujo de Ricci actúa exclusivamente sobre ?. Las marcas del Icc permanecen fijas como condición de borde. Entre eventos de Nachträglichkeit y actos de cirugía, la estructura inconsciente (S, V, ?, n) es independiente del tiempo t del flujo.
+En dimensión 2 la evolución es:
+?g/?t = ?R g en ?
+con condiciones de borde:
+• en ?D?(p?): kg = h(a?) (curvatura geodésica creciente con la carga de la marca),
+• en ?D?(n): kg = 1/? (pared rígida de angustia),
+• en el borde de un entorno de c: el dato u = K|B lo fija la voz del superyó.
+En dimensión 3 se reemplaza kg por la curvatura media H y se añade la clase conforme del borde (Gianniotis, 2016) [VW].
+5.6.3 El gasto de la defensa (Aufwand)
+Freud insiste en que la contrainvestidura tiene un costo: el Yo paga con su propia energía. En el modelo ese costo se hace visible mediante una ley de conservación geométrica.
+Conservación de curvatura (Gauss–Bonnet)
+Para una superficie orientable con borde, el teorema de Gauss–Bonnet afirma:
+?_? K dA + ?_?? kg ds = 2? ?(?)
+En el modelo con cúspide, ? es topológicamente un anillo (o un anillo con agujeros adicionales por cada marca). La característica de Euler es fija mientras no haya cirugía. Por tanto, la suma de la curvatura total en el interior y de las curvaturas geodésicas del borde es una constante.
+Consecuencia inmediata. El flujo de Ricci no destruye curvatura: solo la redistribuye. Cuando una marca se activa por Nachträglichkeit y su carga a? salta, la función h(a?) cambia el valor de kg en el borde correspondiente. Para que Gauss–Bonnet siga cumpliéndose, la integral de K sobre ? debe compensar exactamente ese cambio. Toda la región consciente/preconsciente se reorganiza.
+Esa reorganización obligada es el análogo geométrico del Aufwand: la defensa no puede ignorar la activación de una marca; debe gastar curvatura (es decir, redistribuir tensión) en todo ?.
+El gasto como variación de un funcional
+Perelman construye un funcional monótono (la entropía W) cuyo gradiente es, módulo difeomorfismos y escala, el flujo de Ricci (arXiv:math/0211159) [VW]. En presencia de borde fijo, el candidato natural a medir el costo de la defensa es la variación de ese funcional (o de un funcional de energía compatible con las condiciones de borde de Gianniotis). Mientras el flujo evoluciona suavemente, el funcional decrece o se mantiene: la defensa «paga» acercándose a un estado de menor tensión global, pero nunca elimina las marcas que fijan el borde.
+Qué no puede hacer el gasto
+La contrainvestidura con borde fijo tiene límites estrictos:
+• No borra marcas. Las cargas a? solo cambian por saltos de Nachträglichkeit o por cirugía.
+• No toca el núcleo de la fantasía. La pared kg = 1/? es rígida por postulado; el ciclo C? es indestructible.
+• No cambia la topología. Solo la cirugía (acto analítico) puede eliminar una marca recuperable.
+• En 3D, sin borde fijo el flujo se extingue en tiempo finito (Colding–Minicozzi). El Icc como borde es lo que puede impedir el colapso total del espacio psíquico.
+5.6.4 Proposición: reorganización obligada de la defensa
+Proposición. Sea p? una marca que pasa de latente a activa por un evento de Nachträglichkeit en el instante t?, de modo que a? salta y kg en ?D?(p?) aumenta. Entonces, mientras el flujo permanezca suave:
+1. (i) la integral de K sobre ? debe disminuir exactamente en la misma cantidad en que aumenta la integral de kg en el borde (Gauss–Bonnet);
+2. (ii) la redistribución afecta a toda la región ?, no solo a un entorno de p?;
+3. (iii) el núcleo n y su ciclo C? permanecen intactos;
+4. (iv) la única forma de eliminar la contribución de p? al borde es la cirugía que extrae la marca.
+Interpretación clínica. Cuando un recuerdo reprimido se reactiva, la defensa no puede «localizar» el gasto: debe reorganizarse globalmente. El síntoma (la parte de la voz y(t) que la contrainvestidura no absorbe) puede aumentar o cambiar de forma precisamente porque toda ? se reacomoda. Solo el acto analítico que corta la marca puede aliviar de modo permanente esa carga del borde.
+5.6.5 Síntesis
+ConceptoFormulación en el modeloContrainvestiduraFlujo de Ricci restringido a ?Borde fijoMarcas del Icc como condición de borde (kg o H prescritas)Atemporalidad del IccLas cargas a? no evolucionan con t; solo saltan o se eliminan por cirugíaGasto (Aufwand)Redistribución obligada de curvatura en todo ? (Gauss–Bonnet)Límite de la defensaNo borra marcas ni toca el núcleo; solo la cirugía cambia el bordeRespaldo matemáticoGianniotis (2016) para existencia con borde; Gauss–Bonnet; entropía de Perelman
+5.7 Pulsiones parciales, circuito invocante y marcas S–I
+Complemento de los axiomas 1–10 y las definiciones 1–12.
+5.7.1 Estatuto de esta extensión
+Este bloque no sustituye los Axiomas 1–10 ni las Definiciones 1–12. Añade objetos para: (i) diferenciar registros de la pulsión alrededor del mismo núcleo n; (ii) alojar memoria preconsciente/consciente con olvido; (iii) acoplar oído y voz al circuito invocante. Las decisiones marcadas [A] provienen del autor; las lecturas [P] son hipótesis; Lacan entra en el mínimo ya declarado (esquema L, no nudos) [M].
+Compatible con las correcciones vigentes: Axioma 8 (estructura Icc atemporal; pulsión dinámica); Definición 4 (flujo de Q); Axioma 6 / Proposición 1 (no contraíble en ?, no en S completo).
+5.7.2 Pulsiones parciales y fantasma
+Definición 13 (pulsiones parciales)
+Sea K = {oral, anal, escópica, invocante} el conjunto de pulsiones parciales (Lacan [M]; extensible). Cada k ? K tiene parámetros propios en el entorno de n:
+? = ??_k (r ? ?_k), ?? = ?_k, con ?_k ? ?.
+Cada trayectoria converge al círculo C_k de radio ?_k. Los cuatro son ciclos límite concéntricos alrededor de n, con índice de giro ±1, homotópicos entre sí en ?. En 3D, los cuatro pertenecen a la clase generadora de ??(M) ? ? (salvo el refinamiento del circuito invocante en la Definición 18).
+Axioma 11 (fantasma)
+Existe una única marca primaria n. Todas las pulsiones parciales circulan alrededor de ella y repiten su recorrido: n es el punto común de la repetición; los cuatro circuitos son la misma repetición en registros distintos. Coherente con el Axioma 5.
+Hipótesis: la voz como huella de la repetición [P]
+La voz es el objeto de la pulsión invocante y sale por la cúspide c. Si y(t) está acoplada al circuito invocante, puede heredar periodicidad. Predicción cualitativa: la repetición de la fantasía puede oírse como periodicidad en lo dicho. No se eleva a teorema; es hipótesis contrastable.
+Proposición 4 (enunciado de trabajo)
+La cirugía de la Definición 12 sobre marcas recuperables no modifica ninguno de los C_k, por el mismo argumento de la Proposición 3.
+5.7.3 Marcas de memoria S–I
+Definición 14 (marcas S–I)
+Además de las marcas VR, sea W = {w_1, …, w_m} un conjunto de marcas de memoria en ?. Cada w_j = (s_j, ?_j): marca simbólica s_j y marca imaginaria ?_j, atadas por una ligadura b_j > 0. Las marcas S–I no son vértices de ?: la pulsión no las recorre. La pulsión recorre solo las marcas VR [A].
+Lectura propuesta [P]: s_j ? Wortvorstellung, ?_j ? Sachvorstellung; la ligadura, la representación consciente de 1915 (Sach + Wort). Viven en ? porque el preconsciente está ligado a representaciones de palabra [VT carta 52; VW El yo y el ello]. En Lacan: ejes del esquema L [M].
+Axioma 12 (memoria S–I)
+Existen marcas de memoria S–I, distintas de las marcas VR, formadas por pares atados (simbólico, imaginario). Viven en ? y no son recorridas por la pulsión.
+Definición 15 (dinámica de la memoria S–I)
+Cada par w_j tiene ligadura b_j(t) ? 0:
+• Creación: un evento crea un par con b_j = b_0 m_j (símbolo e imagen juntos).
+• Entre eventos: db_j/dt = ??_j b_j, ?_j ? 0. Si ?_j = 0 el par queda fijo.
+• Refuerzo: b_j(t?) = b_j(t?) + ? ?_ij m_j.
+• Disolución: si b_j < b_min, el par desaparece.
+Contraste con el Axioma 8: las cargas a_i de las marcas VR no decaen; las ligaduras b_j de las S–I sí pueden. El olvido es propio de lo preconsciente/consciente; el Icc estructural es atemporal.
+5.7.4 Observabilidad y fijación
+Definición 16 (orificio y observabilidad)
+Solo el circuito invocante atraviesa el orificio: C_inv entra por B? (lo oído) y sale por B? (lo vocalizado). Los circuitos oral, anal y escópico no cortan a B.
+Axioma 13 (observabilidad)
+La única pulsión observable de forma directa es la invocante, a través de y(t). Las demás se infieren.
+Definición 17 (fijación por el prójimo)
+Un evento de tipo N llega por lo oído (señal u(t)) con contenido simbólico. El sujeto incorpora el efecto y se crea un par (s_j, ?_j) con:
+• ?_j = 0 si nace por incorporación de tipo N (queda fijo);
+• ?_j > 0 en otro caso (se disuelve salvo refuerzo).
+Recorridos débiles (0 < w(e) < ?) pueden crear pares con b_j = ? y ?_j > 0 que casi siempre se disuelven.
+Axioma 14 (fijación por el Nebenmensch)
+Las marcas S–I que se retienen provienen de la incorporación del efecto del prójimo, transmitido por lo simbólico a través de lo oído. Las demás se disuelven.
+Fuente: Entwurf pp. 415–416 [VT] — el complejo del prójimo se divide en parte constante (Ding ? superficie S) y parte comprendida por el propio cuerpo (? marcas S–I).
+Observación [P]: u es entrada de memoria; y es salida de pulsión.
+5.7.5 Circuito invocante
+Definición 18 (circuito invocante deformado)
+Los circuitos oral, anal y escópico son los C_k de la Definición 13. El circuito invocante C_inv es un círculo deformado: sigue un radio ?_inv alrededor de n, pero hace una excursión que entra al orificio por B?, cruza c y sale por B? antes de volver. Es una curva cerrada que pasa por c. En cada vuelta entra lo oído y sale la voz.
+Proposición 5 (enunciado de trabajo)
+En el modelo con orificio, C_inv no es contraíble del mismo modo que un lazo que solo rodea n en S compactificado. En 3D, C_inv representa (o se acopla a) el generador de ??(M) ? ?. Lectura [P]: circuito global que la cirugía admisible no puede cortar. Enunciado sujeto a la topología fina del Horn Torus [M].
+5.7.6 Diccionario ampliado (solo esta extensión)
+• Pulsiones parciales ? familia {C_k} alrededor de n.
+• Fantasma ? única marca n común a todos los C_k.
+• Pulsión invocante / voz ? C_inv acoplado a y(t).
+• Wort / Sach (consciente) ? par (s_j, ?_j) en ?.
+• Olvido ? decaimiento de b_j (?_j > 0).
+• Fijación por el prójimo ? ?_j = 0 vía u(t) (Nebenmensch).
+• Esquema L (mínimo) ? ejes S–I como pares atados [M].
+5.7.7 Límites de la extensión
+• No se formaliza la transferencia.
+• No se desarrollan nudos borromeos ni RSI completo.
+• La periodicidad de y(t) es hipótesis [P], no teorema.
+• Prop. 5 depende de hechos topológicos aún [M].
+• Las pulsiones parciales lacanianas están citadas [M] hasta verificación.
+5.8 Extensión tridimensional: S² × S¹
+Las decisiones marcadas [A] son de modelado; [P] señala hipótesis; [VT]/[VW] indican fuentes verificadas.
+5.8.1 El espacio M = S²×S¹
+Hechos estándar [M; verificar]: M es cerrada y orientable; ?_{1}(M) ? ? (el lazo que da la vuelta al factor S¹); ?_{2}(M) ? ?; su recubrimiento universal es S²×?; contiene la esfera esencial ?_{0} = S²×{pt}, que no separa. Además M = (S² ? S¹) ? e³: su 2-esqueleto es homotópicamente equivalente al Horn Torus S, de modo que M se obtiene de S pegando una 3-celda. Lectura propuesta: el Real (S) es el esqueleto del espacio psíquico, y lo que no es Real es una 3-celda abierta donde se despliega el Pcc/Cc. Hacerlo compatible con el borde fijo queda pendiente.
+5.8.2 Sin Icc fijo, el flujo extingue todo (cálculo)
+Tómese la métrica producto S²(?) × S¹(?). Su Ricci es (1/?²) por la métrica de la esfera, y cero en la dirección del círculo. El flujo ?g/?t = ?2 Ric(g) da
+d(?²)/dt = ?2 ? ?²(t) = ?_{0}² ? 2t, T = ?_{0}²/2
+La curvatura escalar R = 2/?² tiende a infinito en T y M colapsa al círculo S¹. Es un caso de la extinción en tiempo finito de Colding y Minicozzi [VW], porque M no tiene sumandos asféricos. Lectura propuesta: sin un Icc fijo, la contrainvestidura colapsaría todo el espacio. Hipótesis a investigar: con el borde fijo de las marcas (curvatura media y clase conforme prescritas, Gianniotis [VW]) esa extinción podría evitarse.
+5.8.3 Definiciones en 3D
+Definición 3D-1 (región Pcc/Cc). Sea ? = M menos las bolas abiertas B_{?}(p_{i}) alrededor de cada marca, B_{?}(n) alrededor del núcleo y B_{?}(c) alrededor del puerto. Sus fronteras son esferas. Quitar bolas de una 3-variedad no cambia ?_{1}, de modo que ?_{1}(?) ? ?.
+Definición 3D-2 (contrainvestidura). En ?, la métrica evoluciona por ?g/?t = ?2 Ric(g), con estas condiciones de borde:
+• en el borde de B_{?}(p_{i}): curvatura media H = h(a_{i}) y clase conforme fijas entre eventos;
+• en el borde de B_{?}(n): pared rígida H = 2/? (la angustia como pared fija);
+• en el borde de B_{?}(c): dato de la voz del superyó (por definir en 3D).
+Definición 3D-3 (fantasía como estructura global). El circuito de repetición C es un lazo cerrado en ? a distancia al menos ? de n, cuya clase en ?_{1}(M) ? ? es un generador (grado ±1). Los ciclos de ? se realizan como curvas en ? y tienen un grado d(?) ? ?. En 3D, quitar un punto o una bola no crea lazos nuevos: la indestructibilidad ya no viene de rodear a n, sino de la topología global de M. El núcleo n sigue siendo el ancla de la angustia: fija la distancia ? que el circuito respeta, pero no aporta topología.
+Proposición 3D-1 (indestructibilidad global). Mientras el flujo sea suave, la topología de M no cambia y el grado de C se conserva. Una cirugía a lo largo de una esfera que acota una bola y no corta a C no cambia ?_{1}(M) ni la clase de C.
+Definición 3D-4 (disociación espontánea). Un cuello es una región difeomorfa a S²×I con curvatura escalar que crece sin cota. Cuando un cuello ?_{i} se estrangula alrededor de una marca p_{i} en un instante T_{i}, el flujo no puede continuar. Lectura: la defensa aísla por sí sola la parte traumática (el texto inicial identificaba esto con la disociación). Nadie la decide.
+Definición 3D-5 (extracción analítica). La cirugía en ?_{i} consiste en cortar el cuello, descartar la pieza que contiene a la marca (que queda como una componente S³ tras taparla), tapar el lado principal con un casquete estándar y continuar el flujo, que suaviza la unión. Efecto en el modelo: V ? V?{p_{i}}, se eliminan las aristas incidentes y a_{i} ? 0. Perelman hace la cirugía a mano en los tiempos singulares [VW]. Sin ese acto el flujo no continúa más allá de T_{i}; lectura clínica propuesta: una crisis detenida.
+Proposición 3D-2 (cirugía prohibida). Cortar M a lo largo de la esfera esencial ?_{0} da S²×I, y tapando ambos bordes con bolas se obtiene S³, que es simplemente conexa. Esa cirugía destruiría ?_{1} y, con ella, la fantasía. El axioma 10 en 3D restringe la cirugía a esferas que acotan bolas y no cortan a C.
+5.8.4 La S³ como ideal inalcanzable [P]
+El texto inicial decía que el homeomorfismo con la 3-esfera representaba al Yo integrado. La conjetura de Poincaré dice que toda 3-variedad cerrada y simplemente conexa es una S³ [M]. En este modelo, llegar a S³ exige matar ?_{1}, es decir, cortar ?_{0}, y eso está prohibido. El análisis puede extraer las partes traumáticas, cada una de las cuales queda como una S³ separada y descartada, pero lo que queda nunca es S³. La fantasía es lo que impide esa integración total.
+5.8.5 Qué cambia respecto del modelo 2D
+Aspecto2D3D (propuesta)EspacioSuperficie S (Horn Torus)M = S²×S¹; S es su 2-esqueletoMarcasPuntos con curvatura concentradaBolas con frontera esférica fijaNúcleo nSumidero con ciclo límite e índice de giroBola con pared rígida; ancla de la distancia ?IndestructibilidadÍndice de giro en S?{n}Clase en ?_{1}(M) ? ?Datos de bordeCurvatura geodésica k_{g}Curvatura media H y clase conformePuerto de la vozCúspide con dos cuernos y par (K, ?_{?}K)Esfera en el borde de B_{?}(c); par por definirCuraIntervención decidida en un cuelloDisociación espontánea y extracción analíticaLey de conservaciónGauss–Bonnet (Proposición 2)Ninguna análoga; candidata: la entropía de Perelman
+5.8.6 Problemas abiertos del modelo 3D
+1. ¿Pueden formarse cuellos con el borde fijo? Hay que estudiar el flujo con borde cerca de singularidades.
+2. Relación entre el Horn Torus S (el 2-esqueleto) y las fronteras de ?.
+3. El puerto de la voz en 3D: se pierden los dos cuernos.
+4. El costo (Aufwand) de la contrainvestidura, medido con la entropía de Perelman.
+5. Existencia del flujo con borde fijo para tiempos largos; Colding y Minicozzi no cubre el caso con borde.
+6. Verificar los hechos topológicos marcados [M].
+Capítulo 6. Cirugía, fantasía y las tres fases de «Pegan a un niño»
+Precisión de lectura. Las fases 1 y 2 son construcciones de Freud; ninguna es un recuerdo recuperable. Solo la fase 3 es la forma consciente que trae el paciente.
+6.1 El texto freudiano
+Freud (1919) describe la fantasía «un niño es golpeado» (Ein Kind wird geschlagen) como una formación que atraviesa tres fases. La reconstrucción de las dos primeras no se apoya en recuerdos del paciente, sino en la necesidad lógica y clínica de la teoría.
+Fase 1. «Mi padre pega al niño (que yo odio)». El niño golpeado es otro (casi siempre un hermano o rival). El agente es el padre. Carácter predominantemente sádico. Es una construcción de Freud; el material que el paciente aporta sobre ella es escaso e indefinido. No es un recuerdo recuperable en el sentido clínico ordinario.
+Fase 2. «Yo soy azotado por el padre». Carácter masoquista. Freud la llama «la más importante y grávida en consecuencias». Nunca es recordada, nunca llegó a la conciencia, «en cierto sentido nunca tuvo existencia real». Es una construcción del análisis.
+Fase 3. «Pegan a un niño». Forma que aparece en la vida adulta y en el material clínico manifiesto. El agente ya no es el padre sino un sustituto (maestro, autoridad). El sujeto ocupa el lugar de espectador. Va acompañada de excitación sexual. Esta es la única fase que el paciente trae como recuerdo o fantasía consciente.
+Fuente: Freud, Ein Kind wird geschlagen (1919), SE XVII / GW XII [VW].
+6.2 Corrección del modelo: qué es recuperable y qué no
+Corrección respecto de la versión anterior. Había asignado la fase 1 a una marca traumática recuperable (VT). Eso es incorrecto. Tanto la fase 1 como la fase 2 son construcciones; ninguna de las dos es recuperable como recuerdo. Solo la fase 3 es la forma que el sujeto presenta.
+En el modelo esto se traduce así:
+FaseEstatura clínica (Freud)Objeto en el modelo1Construcción de Freud; no recuperableEstructura fija no separable (parte del circuito que rodea a n, o marca primaria secundaria)2Construcción radical; nunca conscienteMarca primaria n + ciclo límite C? (indestructible)3Única forma consciente / traída por el pacienteSalida observable y(t) por la cúspide (voz)
+La distinción trauma recuperable vs. fantasía indestructible se mantiene, pero ya no se identifica con la fase 1. El trauma recuperable (marcas de VT) sigue existiendo en el modelo como aquello que fue reprimido y puede recordarse o elaborarse; las fases 1 y 2 de la fantasía de paliza son otra cosa: son construcciones que el análisis produce para dar cuenta de la forma manifiesta (fase 3).
+6.3 Correspondencias formales corregidas
+Fase 2 (núcleo indestructible)
+La marca primaria n ? V no tiene aristas cargadas. La pulsión converge al ciclo límite C?. Ese ciclo es indestructible (Proposición 1) y no es separable por cirugía. Corresponde al estatus freudiano más radical: nunca recordada, nunca consciente, construcción necesaria.
+Fase 1 (construcción previa)
+También es construcción. En el modelo se ubica como la estructura que hace posible el circuito de repetición: el conjunto de aristas o la organización del grafo que permite que la pulsión sea capturada por C?. No es una marca que se pueda «sacar» por cirugía. Forma parte de la arquitectura fija del Icc junto con n. La cirugía no la toca.
+Fase 3 ? la voz y(t)
+La única salida observable del sistema es el flujo normal de curvatura por el borde de la cúspide:
+y(t) = ?_B ??K ds
+Esta es la forma manifiesta. El síntoma es la parte de y(t) que la contrainvestidura no absorbe: y_sint(t) = y(t) ? y?(t).
+6.4 Consecuencia para la cirugía (Axioma 10)
+La cirugía sigue operando solo sobre marcas traumáticas recuperables (VT): aquello que fue reprimido y puede elaborarse o recordarse. Las fases 1 y 2 de la fantasía de paliza no son ese trauma. Son construcciones que explican por qué la forma manifiesta (fase 3) tiene la estructura que tiene. Por tanto la cirugía no las elimina. La fantasía, en su núcleo (fase 2) y en su organización previa (fase 1), permanece indestructible.
+6.5 El esquema L mínimo (sin cambios)
+Se mantiene la asignación anterior:
+RegistroObjeto del modeloJustificaciónRealSuperficie S del Horn Torus (Ding)Axioma 1; EntwurfSimbólicoGrafo ? y las marcas VRHilo ?, BahnungImaginarioCircuitos, C?, forma de la fase 3Lo escenificado / el espectador
+La fase 3 (voz) es el punto en que lo Simbólico e Imaginario se hacen oír en el borde del Real. Las fases 1 y 2 son las construcciones que el analista produce para dar cuenta de esa salida.
+6.6 La construcción analítica como problema inverso
+Freud (1937) afirma que una construcción certera rinde el mismo servicio que un recuerdo recuperado. En este marco eso es aún más preciso: las fases 1 y 2 son construcciones. El criterio de certeza se mantiene:
+• El analista solo observa y(t).
+• Una construcción es un candidato de estructura interna (V, ?, n, organización del circuito).
+• Es certera si reproduce y(t) y predice la respuesta a nuevos eventos, sin alterar la topología fija de C?.
+La contingencia del análisis (Axioma 10c) sigue siendo la posible no-unicidad del problema inverso.
+6.7 Diccionario corregido
+Concepto freudianoObjeto geométricoFase 1 (construcción)Organización fija del circuito que alimenta C? (no separable)Fase 2 (construcción radical)Marca primaria n + ciclo límite C? (indestructible)Fase 3 (forma consciente)Salida observable y(t)Trauma recuperable (reprimido)Marcas de VT (separables por cirugía)Construcción certeraSolución del problema inverso borde ? interiorFantasía indestructibleClase de C? (2D) o generador de ??(M) (3D)
+Capítulo 7. Límites y objeciones
+Tensiones del modelo, problemas abiertos y respuestas parciales.
+7.1 Propósito del capítulo
+Una tesis de analogía controlada se mide también por lo que declara no sostener. Este capítulo enumera las tensiones internas del modelo, las objeciones previsibles (del lado psicoanalítico y del matemático) y el estado de cada una: resuelta, parcial, abierta o postulada. No es un apéndice de modestia: es parte del contrato del Capítulo 1 (criterio de éxito y etiquetado de incertidumbre).
+Se agrupan los puntos en cuatro bloques: (A) geometría y dimensión; (B) tiempo, pulsión y defensa; (C) cirugía, fantasía y clínica; (D) fuentes, formalismo y alcance. Al final, una tabla-resumen.
+7.2 Bloque A — Geometría y dimensión
+7.2.1 Singularidad del Horn Torus
+Objeción. El Horn Torus no es una variedad riemanniana suave en la cúspide; el flujo de Ricci no se define allí de modo estándar.
+Respuesta. Se trabaja sobre la familia T_r con r < 1 o sobre S?{c}. La cúspide c se trata como puerto (Axioma 9), no como punto regular del flujo. Estado: resuelta a nivel de modelado; la geometría fina del entorno de c (métricas cónicas, etc.) no se desarrolla.
+7.2.2 Dimensión 2 frente a la conjetura de Poincaré (3D)
+Objeción. La conjetura de Poincaré es un teorema sobre 3-variedades; el núcleo del modelo es 2D.
+Respuesta. El 2D se elige por simplicidad de las ecuaciones y por Gauss–Bonnet. El modelo 3D (S²×S¹) es la extensión natural cuando se quiere estrangulamiento espontáneo e indestructibilidad por ??. Estado: parcial — el puente está declarado; la equivalencia de lecturas clínicas 2D/3D no está demostrada.
+7.2.3 Compatibilidad del dato de borde en c con Gianniotis
+Objeción. No está probado que u = K (o el par Dirichlet–Neumann adoptado) satisfaga exactamente las hipótesis de existencia/unicidad de Gianniotis (2016) y trabajos afines.
+Respuesta. Se invoca el marco de flujo con borde prescrito como garantía de que el problema está bien planteado en la literatura; la verificación fina de nuestras condiciones concretas queda abierta. Estado: abierta.
+7.2.4 Existencia a tiempos largos con borde fijo (3D)
+Objeción. Aunque exista el flujo local con borde, no se demuestra existencia global ni se controla la formación de cuellos con las paredes kg = 1/? y H = h(a_i).
+Respuesta. El modelo no pretende un teorema de existencia global; usa el flujo como analogía de la defensa y la cirugía como acto. Estado: abierta (matemática); no bloquea el diccionario.
+7.3 Bloque B — Tiempo, pulsión y defensa
+7.3.1 Atemporalidad del Icc frente al tiempo del flujo
+Objeción. ¿Cómo puede haber un objeto atemporal dentro de un modelo con EDP temporal?
+Respuesta. Axioma 8 corregido: atemporal es la estructura (marcas, ?, n); el tiempo t del flujo de Ricci es solo el de la contrainvestidura en ?. La pulsión es dinámica (Definición 4 corregida), no la estructura. Estado: resuelta a nivel axiomático.
+7.3.2 Repetición (ciclos) frente a monotonicidad de Perelman
+Objeción. Perelman demuestra que el flujo, módulo difeomorfismos y escala, no tiene órbitas periódicas no triviales; la clínica insiste en la compulsión de repetición.
+Respuesta. Axioma de método M3: dos niveles de dinámica. Ciclos de la pulsión sobre S (o clase en ??) ? trayectorias periódicas en el espacio de métricas. Estado: resuelta por separación de niveles; no es un teorema que «unifique» ambos, es una distinción declarada.
+7.3.3 Modelo mínimo de Q incompleto
+Objeción. La Definición 4 anuncia un esquema dQ_i/dt = ?? L^?_ij Q_j + s_i(t) pero no lo desarrolla ni lo acopla al flujo de Ricci.
+Respuesta. Decisión explícita de posponer el modelo completo de Q; se fija el estatuto (flujo dinámico, no marca atemporal). Estado: parcial / pospuesto.
+7.3.4 Forma de h(a_i) y de g en Nachträglichkeit
+Objeción. Las funciones que ligan carga a curvatura geodésica de borde (h) y la ganancia g ? 1 del salto no están determinadas.
+Respuesta. Se postula existencia de h creciente y de g ? 1; la forma concreta es libre mientras preserve la lógica cualitativa (más carga ? borde más rígido; posterioridad intensifica). Estado: postulada.
+7.4 Bloque C — Cirugía, fantasía y clínica
+7.4.1 Cirugía en 2D no cambia la topología global
+Objeción. En 2D, extraer discos y tapar con casquetes no reproduce el cambio topológico rico de la cirugía de Perelman en 3D.
+Respuesta. En 2D la cirugía es intervención decidida sobre marcas de V_T; la topología relevante para la fantasía es el índice de giro alrededor de n, que se preserva (Proposición 3). En 3D el estrangulamiento puede ser espontáneo. Estado: aceptada como límite del 2D; motivó la extensión 3D.
+7.4.2 Regla de reorganización de aristas tras cirugía
+Objeción. Al eliminar un vértice p_i, ¿cómo se redefinen las aristas de ??
+Respuesta. Falta una regla explícita (unión de vecinos, redistribución de pesos, etc.). El atractor C_? persiste; los ciclos que pasaban por p_i se rompen. Estado: abierta.
+7.4.3 Postulado 2?? ? ?_min
+Objeción. La desigualdad que impide que la cirugía «trague» el núcleo no es un teorema.
+Respuesta. Es un postulado de separación de escalas (angustia vs. cuellos operables). Estado: postulado.
+7.4.4 Fases 1 y 2 de la fantasía como construcciones
+Objeción. ¿No se pierde la clínica del trauma al insistir en que las fases 1 y 2 no son recuperables?
+Respuesta. Se distingue trauma reprimido elaborable (V_T, operable) de las construcciones de la fantasía de paliza (n, C_?). Ambas cosas existen en el modelo; no se confunden. Estado: resuelta por decisión de lectura de Freud 1919 [contrastada en Cap. 6].
+7.4.5 Contingencia del análisis (problema inverso)
+Objeción. Si recuperar el interior desde y(t) puede no ser único, el modelo ¿no vacía la pretensión de verdad de la construcción analítica?
+Respuesta. Axioma de método M6: la contingencia se formaliza, no se niega. Una construcción es un candidato de interior compatible con y(t); el análisis puede fallar en identificar el circuito dominante. Estado: resuelta como límite declarado, no como defecto oculto.
+7.4.6 Transferencia y segunda tópica no modeladas
+Objeción. Faltan la transferencia y el ello/yo/superyó como regiones.
+Respuesta. Exclusiones del Capítulo 1. El superyó entra solo vía puerto c (voz/oído). Estado: exclusión deliberada.
+7.5 Bloque D — Fuentes, formalismo y alcance
+7.5.1 Citas marcadas [M]
+Objeción. Atemporalidad (1915), Gegenbesetzung, superyó–oído (1923), texto exacto de Pegan a un niño (1919) no están todas verificadas página a página en la edición definitiva.
+Respuesta. Etiquetado [M] transparente; anclas [VT] en Imago para Entwurf y cartas. Estado: pendiente de verificación final.
+7.5.2 Originalidad y falta de tradición «Ricci freudiano»
+Objeción. Sin literatura previa del cruce, cada paso carece de red de citas afines.
+Respuesta. Asumido en Cap. 1: la carga de rigor es mayor; el diccionario debe defenderse punto a punto. Estado: condición de trabajo, no error.
+7.5.3 Riesgo de analogía desbocada
+Objeción. Se lee en la geometría lo que ya se puso en la interpretación.
+Respuesta. Mitigado por etiquetas [P]/[A], revisión de consistencia (problemas A–F) y este capítulo de límites. No eliminado del todo. Estado: riesgo residual declarado.
+7.5.4 El modelo no predice clínica ni se implementa numéricamente
+Objeción. ¿De qué sirve un modelo que no genera predicciones testables ni simulaciones?
+Respuesta. El criterio de éxito del Cap. 1 es coherencia del diccionario, fidelidad a fuentes y proposiciones internas — no predicción epidemiológica ni código. Estado: alcance deliberado.
+7.6 Tabla-resumen
+• A1 Horn Torus singular: Resuelta (T_r / S?{c})
+• A2 Dimensión 2 vs 3: Parcial (extensión 3D)
+• A3 Borde c vs Gianniotis: Abierta
+• A4 Existencia global 3D con borde: Abierta
+• B1 Atemporalidad vs flujo: Resuelta (Ax. 8 corregido)
+• B2 Repetición vs monotonicidad: Resuelta (dos niveles)
+• B3 Modelo de Q: Pospuesto
+• B4 Forma de h y g: Postulada
+• C1 Cirugía 2D y topología: Límite 2D aceptado
+• C2 Reorganización de aristas: Abierta
+• C3 2?? ? ?_min: Postulado
+• C4 Fases 1–2 construcciones: Resuelta (Cap. 6)
+• C5 Problema inverso / contingencia: Resuelta como límite
+• C6 Transferencia / 2.ª tópica: Exclusión deliberada
+• D1 Citas [M]: Pendiente
+• D2 Sin tradición previa: Condición asumida
+• D3 Analogía desbocada: Riesgo residual
+• D4 Sin predicción numérica: Alcance deliberado
+7.7 Consecuencias para el resto de la tesis
+Las tensiones resueltas (atemporalidad, niveles de dinámica, fases de la fantasía, contingencia) refuerzan el núcleo del Capítulo 5. Las abiertas (borde de Gianniotis, reorganización de aristas, Q, citas [M]) no invalidan el diccionario; acotan lo que aún no se afirma. El Capítulo 8 debe recoger esta frontera: qué se sostuvo, qué quedó abierto, qué se excluyó de propósito.
+7.8 Cierre
+El modelo no es una teoría cerrada del aparato psíquico. Es un sistema de axiomas, definiciones y proposiciones con una lista explícita de fallas y de tareas. Quien objete un punto debería poder señalar la fila de la tabla de la §7.6; quien lo defienda, el mismo mapa.
+Capítulo 8. Conclusiones
+Qué se sostuvo, qué quedó abierto y qué se excluyó de propósito.
+8.1 Retorno a la pregunta inicial
+La pregunta que abrió la tesis era si es posible formalizar, por analogía controlada, aspectos de la metapsicología freudiana con herramientas de la geometría del flujo de Ricci y de la topología de Poincaré, sin pretender que la psique «sea» una variedad ni que el análisis «sea» una cirugía de Perelman.
+La respuesta no es un sí o un no global. Es un sistema de diez axiomas, un conjunto de definiciones y proposiciones, un diccionario Freud–geometría, una extensión 3D y una lista explícita de límites. Ese sistema existe, es internamente coherente en los puntos revisados y declara dónde no alcanza.
+8.2 Qué se sostuvo
+8.2.1 El diccionario
+Se construyó un diccionario que traduce: Ding ? superficie S; Vorstellungsrepräsentanz ? marcas con carga; Bahnung ? pesos del grafo ?; pulsión ? flujo dinámico sobre ?_? (no atemporal); núcleo de la fantasía ? n + ciclo límite C_? (o clase en ?? en 3D); contrainvestidura ? flujo de Ricci en ? con borde fijo; Nachträglichkeit ? saltos de carga; voz/oído ? puerto c; trauma recuperable ? marcas separables de V_T; cura ? cirugía solo sobre V_T.
+Las correcciones al Axioma 8 y a la Definición 4 fijaron una distinción que el trabajo no puede perder: la estructura del Icc (marcas, red, núcleo) es atemporal; la pulsión y la defensa son procesos en el tiempo.
+8.2.2 Proposiciones internas
+Se argumentó que el ciclo de la fantasía es indestructible bajo flujo suave (Proposición 1); que la activación de una marca obliga a redistribuir curvatura en toda ? por Gauss–Bonnet (Proposición 2, Aufwand); y que la cirugía admisible no altera la clase de C_? (Proposición 3). En 3D, cortar la esfera esencial está prohibido porque destruiría ??.
+8.2.3 Lectura de la fantasía
+Las fases 1 y 2 de «Pegan a un niño» se trataron como construcciones, no como recuerdos recuperables; la fase 3 como forma consciente observable en y(t). El trauma elaborable existe en el modelo, pero no se confunde con esas fases.
+8.2.4 Separación de niveles
+La tensión entre compulsión de repetición y monotonicidad del flujo de Perelman se resolvió declarando dos niveles de dinámica: pulsión sobre la superficie versus evolución de la métrica en el espacio de métricas. No se forzó una identificación que el formalismo no admite.
+8.2.5 Fuentes
+El ancla freudiano prioritario fue el Entwurf y las cartas a Fliess verificadas en Imago [VT], completado por 1915–1919 con marcas [M] donde faltaba verificación página a página. Del lado matemático se citaron Perelman, Colding–Minicozzi, Gianniotis y el marco de Hamilton, sin pretender reproducir las pruebas.
+8.3 Qué quedó abierto
+• Compatibilidad fina del dato de borde en c con las hipótesis de
+Gianniotis.
+• Existencia global del flujo con las paredes de angustia y las marcas
+en 3D.
+• Regla de reorganización de aristas de ? tras cirugía.
+• Forma concreta de h(a_i) y de la ganancia g de Nachträglichkeit.
+• Desarrollo completo del modelo de Q y su eventual acoplamiento al
+flujo de Ricci.
+• Verificación definitiva de las citas [M] en ediciones Amorrortu/GW.
+• Problemas específicos del modelo 3D (puerto de la voz, cuellos con
+borde fijo).
+Ninguno de estos puntos invalida el diccionario; todos acotan lo que aún no se afirma. El Capítulo 7 los detalla con estado (abierta, postulada, pendiente).
+8.4 Qué se excluyó de propósito
+• Ontología de la psique como variedad riemanniana.
+• Modelo del cerebro o de redes neuronales contemporáneas.
+• Topología lacaniana de nudos (solo esquema L mínimo y Real ? Ding).
+• Formalización de la transferencia y de la segunda tópica como
+partición de la variedad.
+• Predicción clínica cuantitativa o implementación numérica del flujo.
+Esas exclusiones no son olvidos: son el reverso del Axioma de método M1 (analogía, no identidad) y del criterio de éxito del Capítulo 1.
+8.5 Contribución
+La contribución, si se sostiene, es haber mostrado un camino practicable: un sistema axiomático explícito, con fuentes controladas, con proposiciones internas y con un mapa de fallas. En un campo sin tradición de «Ricci freudiano», el valor no está en cerrar el debate, sino en ofrecer un objeto que se puede criticar punto por punto —axioma por axioma, etiqueta por etiqueta.
+En particular, la reformulación de trauma recuperable versus fantasía indestructible como objetos operables por cirugía versus objetos protegidos por topología (índice de giro o ??) da forma geométrica a una distinción ya presente en Freud (lo reprimido elaborable frente a lo que solo se construye).
+8.6 Límites de estas conclusiones
+Este capítulo no añade teoremas nuevos. Resume el contrato cumplido y el no cumplido. La densidad de los Capítulos 2–4 puede aún crecer hacia el plan de 35–60 páginas; el núcleo (Caps. 5–7 y correcciones) es lo que fija el alcance teórico actual.
+8.7 Cierre
+El inconsciente freudiano, en el fragmento trabajado, admite una hospedaje geométrico parcial: marcas que no fluyen, una red que facilita, una pulsión que sí se mueve, una defensa que redistribuye curvatura bajo borde fijo, una fantasía que no se corta y un acto que solo extrae lo separable. Poincaré aporta los lazos y los ciclos; Perelman, el flujo y la cirugía; Freud, las formas que merecían esa traducción.
+Lo que permanece, cuando se apaga el flujo de la defensa, no es la 3-esfera. Es un espacio con resto —con lazo, con núcleo, con marcas—. El modelo no promete la integración total. Promete un lenguaje en el que esa imposibilidad se puede enunciar sin metáfora vaga.
+Ahí termina el trabajo de esta tesis y empieza el de quien quiera continuar, refutar o densificar cada flecha del diccionario.
+Fuentes y criterios de verificación
+Clave de etiquetas. [VT]: texto alemán verificado; [VW]: fuente digital verificada; [M]: referencia pendiente de comprobación página a página; [A]: decisión de modelado; [P]: hipótesis o interpretación propuesta.
+Matemática: núcleo del flujo de Ricci y Perelman
+FuenteUsoEstadoPerelman, The entropy formula for the Ricci flow and its geometric applications, arXiv:math/0211159 (2002)Funcional W, monotonicidad, no-breathers y no-colapso.[VW]Perelman, Ricci flow with surgery on three-manifolds, arXiv:math/0303109 (2003)Cuellos, cuernos, cirugía y vecindades canónicas.[VW]Perelman, Finite extinction time for the solutions to the Ricci flow on certain three-manifolds, arXiv:math/0307245 (2003)Extinción en tiempo finito.[VW]Colding–Minicozzi, J. Amer. Math. Soc. 18 (2005)Extinción en 3-variedades sin sumandos asféricos.[VW]Gianniotis, The Ricci flow on manifolds with boundary, J. Differential Geom. 104(2), 2016, pp. 291–324Existencia y unicidad con borde: curvatura media y clase conforme.[VW]Gianniotis, The Ricci flow on surfaces with boundary, arXiv:1209.2386Curvatura geodésica prescrita en dimensión 2.[VW]Kleiner–Lott, Notes on Perelman’s papers (Geometry & Topology)Exposición completa del programa.[M]Morgan–Tian, Ricci Flow and the Poincaré Conjecture (Clay Mathematics Monographs, 2007)Referencia de la demostración.[M]Hamilton, Three-manifolds with positive Ricci curvature (1982); flujo en superficies (1988)Origen del flujo.[M]
+Matemática: puentes con el modelo
+FuenteUso en la tesisEstadoM. Salo, Inverse problems for elliptic equations, arXiv:1206.5755Problema inverso y reconstrucción desde el borde; mapa de Dirichlet a Neumann.[M]S. N. Dorogovtsev, A. F. Goltsev, J. F. F. Mendes, Critical phenomena in complex networks, arXiv:cond-mat/0403613Redes ponderadas, flujos y transiciones de fase.[M]Astala–Päivärinta (2006)Problema de Calderón en dimensión 2.[M]
+Freud y psicoanálisis
+FuenteUsoEstadoAus den Anfängen der Psychoanalyse (Imago): cartas y EntwurfInercia, constancia, Bahnung, Ding, Nachträglichkeit y Seitenbesetzung.[VT]Freud, La afasia (1891)Imagen sonora y representación de palabra.Archivo aportadoFreud, Lo inconsciente (1915) y La represión (1915)Sach/Wort, atemporalidad, Gegenbesetzung y represión primaria.[VW]Freud, Pegan a un niño (1919)Tres fases; fase 2 como construcción.[VW]Freud, El yo y el ello (1923)Superyó y oído (Hörkappe).[VW]Lacan, esquema L (mínimo)Ejes S–I.[M]
+Poincaré e invención
+FuenteUsoEstadoPoincaré, Analysis Situs (1895); Quinto complemento (1904)Grupo fundamental y conjetura.[M]Poincaré, La invención matemática (en Ciencia y método, 1908)Trabajo inconsciente previo a la iluminación.[VW]Hadamard, Essay on the Psychology of Invention in the Mathematical Field (1945)Cuatro fases: preparación, incubación, iluminación y verificación.[VW]
+Apéndice A. Glosario alemán–español
+Término alemánTraducción usadaUso en la tesisVorstellungrepresentaciónConcepto base.Vorstellungsrepräsentanzrepresentante de la representaciónMarca VR (axioma 2).Sachvorstellung / Wortvorstellungrepresentación de cosa / de palabraCap. 2; Vb ligado a la palabra.Niederschrifttranscripción, inscripciónCarta 52 (cap. 2).BahnungfacilitaciónPesos w de ?.Kontaktschrankebarrera de contactoNoción de contacto en la cúspide.Besetzunginvestidura, cargaCarga a_{i} de las marcas.Seitenbesetzunginvestidura lateralAntecedente de la contrainvestidura.GegenbesetzungcontrainvestiduraFlujo de Ricci sobre ?.Nachträglichkeitposterioridad, acción diferidaAxioma 7.NebenmenschprójimoOrigen del Ding.DingcosaSuperficie S (Real).Trägheitsprinzipprincipio de inercia neuronalCap. 2.Konstanzprinzipprincipio de constanciaDefinición 4.Triebfederresorte pulsional (estímulo endógeno)Término s en la Definición 4.Urverdrängungrepresión primariaMarca primaria n.Schutzbauconstrucción protectoraCarta del 2.5.1897: fantasías.Agierenactuar, repetir en actoCiclo C_{?}.
+Apéndice B. Notación matemática
+SímboloSignificadoS, cHorn Torus (superficie) y su cúspide.T_{r}Toro de revolución de radio mayor 1 y radio menor r (r = 1 da S).V, V_{T}, nConjunto de marcas, marcas traumáticas recuperables y marca primaria.a_{i}, ?_{i}, a*Carga de la marca p_{i}, su estado (latente o activo) y el umbral de activación.? = (V, E, w), ?_{?}Grafo ? con pesos de facilitación y su subgrafo de aristas con w ? ?.Q, s, L_{?}Cantidad en las marcas, estímulo endógeno y laplaciano del subgrafo ?_{?}.?, ?, ?, C_{?}Radio de angustia, tasa radial, velocidad angular y ciclo límite alrededor de n.w(?, n)Índice de giro de la curva ? alrededor de n.g, K, RMétrica, curvatura de Gauss y curvatura escalar (R = 2K en dimensión 2).?Región Pcc/Cc: S sin los discos de las marcas, sin el del núcleo y sin la cúspide.k_{g}, h, ?Curvatura geodésica del borde, función creciente de la carga y radio de los discos de las marcas.B = B_{+} ? B_{?}Borde de un entorno de c, con una circunferencia por cuerno.u, yDato de Dirichlet K en B (lo oído) y flujo normal de K en B (lo vocalizado).?_{ij}, m_{j}, g(t)Asociación, magnitud del evento y ganancia de maduración.?_{i}, D_{i}, ?_{min}Curva del cuello, disco que acota y longitud máxima de un cuello.M, ?_{0}, d(?)Espacio S²×S¹, esfera esencial S²×{pt} y grado de una curva en ?_{1}(M) ? ? (3D).HCurvatura media del borde (3D).W, s_{j}, ?_{j}, b_{j}Marcas de memoria S–I, su componente simbólica, su componente imaginaria y la ligadura entre ambas.?Característica de Euler.?_{1}Grupo fundamental.
+Flujo de Ricci y metapsicología freudiana
+
+1
+
+
+
+
+
